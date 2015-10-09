@@ -1,0 +1,262 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+* /deep/ *[primary] {
+  background-color: #ee7b00;
+  color: #eee; }
+
+* /deep/ *[primary-light] {
+  background-color: #ff9422;
+  color: #444; }
+
+* /deep/ *[primary-dark] {
+  background-color: #bb6100;
+  color: #eee; }
+
+* /deep/ *[secondary] {
+  background-color: #FB7560;
+  color: #444; }
+
+* /deep/ *[secondary-light] {
+  background-color: #fca092;
+  color: #444; }
+
+* /deep/ *[secondary-dark] {
+  background-color: #fa4a2e;
+  color: #444; }
+
+* /deep/ *[accent] {
+  background-color: #0A86B2;
+  color: #eee; }
+
+* /deep/ *[accent-light] {
+  background-color: #0daae2;
+  color: #eee; }
+
+* /deep/ *[accent-dark] {
+  background-color: #076282;
+  color: #eee; }
+
+html {
+  font-size: 100%; }
+
+* /deep/ button {
+  background-color: #ee7b00;
+  color: #eee;
+  margin: 0.2rem 0.4rem;
+  padding: 0.8rem;
+  border: 0px transparent;
+  border-radius: 0.2rem; }
+
+* /deep/ button:hover {
+  box-shadow: 0 1px 1px 1px #884600; }
+
+* /deep/ button[primary]:hover {
+  box-shadow: 0 1px 1px 1px #884600; }
+
+* /deep/ button[primary-light]:hover {
+  box-shadow: 0 1px 1px 1px #bb6100; }
+
+* /deep/ button[primary-dark]:hover {
+  box-shadow: 0 1px 1px 1px #552c00; }
+
+* /deep/ button[secondary]:hover {
+  box-shadow: 0 1px 1px 1px #ef2606; }
+
+* /deep/ button[secondary-light]:hover {
+  box-shadow: 0 1px 1px 1px #fa4a2e; }
+
+* /deep/ button[secondary-dark]:hover {
+  box-shadow: 0 1px 1px 1px #bd1e05; }
+
+* /deep/ button[accent]:hover {
+  box-shadow: 0 1px 1px 1px #053d51; }
+
+* /deep/ button[accent-light]:hover {
+  box-shadow: 0 1px 1px 1px #076282; }
+
+* /deep/ button[accent-dark]:hover {
+  box-shadow: 0 1px 1px 1px #021921; }
+
+/*--------------------
+	Flat Style
+--------------------*/
+* /deep/ button[flat] {
+  color: #ee7b00;
+  background-color: transparent;
+  box-shadow: none; }
+  * /deep/ button[flat]:hover {
+    box-shadow: none;
+    text-decoration: underline; }
+
+* /deep/ button[primary][flat] {
+  color: #ee7b00;
+  background-color: transparent;
+  box-shadow: none; }
+  * /deep/ button[primary][flat]:hover {
+    box-shadow: none;
+    text-decoration: underline; }
+
+* /deep/ button[primary-light][flat] {
+  color: #ff9422;
+  background-color: transparent;
+  box-shadow: none; }
+  * /deep/ button[primary-light][flat]:hover {
+    box-shadow: none;
+    text-decoration: underline; }
+
+* /deep/ button[primary-dark][flat] {
+  color: #bb6100;
+  background-color: transparent;
+  box-shadow: none; }
+  * /deep/ button[primary-dark][flat]:hover {
+    box-shadow: none;
+    text-decoration: underline; }
+
+* /deep/ button[secondary][flat] {
+  color: #FB7560;
+  background-color: transparent;
+  box-shadow: none; }
+  * /deep/ button[secondary][flat]:hover {
+    box-shadow: none;
+    text-decoration: underline; }
+
+* /deep/ button[secondary-light][flat] {
+  color: #fca092;
+  background-color: transparent;
+  box-shadow: none; }
+  * /deep/ button[secondary-light][flat]:hover {
+    box-shadow: none;
+    text-decoration: underline; }
+
+* /deep/ button[secondary-dark][flat] {
+  color: #fa4a2e;
+  background-color: transparent;
+  box-shadow: none; }
+  * /deep/ button[secondary-dark][flat]:hover {
+    box-shadow: none;
+    text-decoration: underline; }
+
+* /deep/ button[accent][flat] {
+  color: #0A86B2;
+  background-color: transparent;
+  box-shadow: none; }
+  * /deep/ button[accent][flat]:hover {
+    box-shadow: none;
+    text-decoration: underline; }
+
+* /deep/ button[accent-light][flat] {
+  color: #0daae2;
+  background-color: transparent;
+  box-shadow: none; }
+  * /deep/ button[accent-light][flat]:hover {
+    box-shadow: none;
+    text-decoration: underline; }
+
+* /deep/ button[accent-dark][flat] {
+  color: #076282;
+  background-color: transparent;
+  box-shadow: none; }
+  * /deep/ button[accent-dark][flat]:hover {
+    box-shadow: none;
+    text-decoration: underline; }
+
+/*--------------------
+	Raised Style
+--------------------*/
+* /deep/ button[raised] {
+  box-shadow: 0 1px 1px 1px #884600; }
+  * /deep/ button[raised]:hover {
+    box-shadow: 0 2px 2.5px 1.5px #884600; }
+
+* /deep/ button[primary][raised] {
+  box-shadow: 0 1px 1px 1px #884600; }
+  * /deep/ button[primary][raised]:hover {
+    box-shadow: 0 2px 2.5px 1.5px #884600; }
+
+* /deep/ button[primary-light][raised] {
+  box-shadow: 0 1px 1px 1px #bb6100; }
+  * /deep/ button[primary-light][raised]:hover {
+    box-shadow: 0 2px 2.5px 1.5px #bb6100; }
+
+* /deep/ button[primary-dark][raised] {
+  box-shadow: 0 1px 1px 1px #552c00; }
+  * /deep/ button[primary-dark][raised]:hover {
+    box-shadow: 0 2px 2.5px 1.5px #552c00; }
+
+* /deep/ button[secondary][raised] {
+  box-shadow: 0 1px 1px 1px #ef2606; }
+  * /deep/ button[secondary][raised]:hover {
+    box-shadow: 0 2px 2.5px 1.5px #ef2606; }
+
+* /deep/ button[secondary-light][raised] {
+  box-shadow: 0 1px 1px 1px #fa4a2e; }
+  * /deep/ button[secondary-light][raised]:hover {
+    box-shadow: 0 2px 2.5px 1.5px #fa4a2e; }
+
+* /deep/ button[secondary-dark][raised] {
+  box-shadow: 0 1px 1px 1px #bd1e05; }
+  * /deep/ button[secondary-dark][raised]:hover {
+    box-shadow: 0 2px 2.5px 1.5px #bd1e05; }
+
+* /deep/ button[accent][raised] {
+  box-shadow: 0 1px 1px 1px #053d51; }
+  * /deep/ button[accent][raised]:hover {
+    box-shadow: 0 2px 2.5px 1.5px #053d51; }
+
+* /deep/ button[accent-light][raised] {
+  box-shadow: 0 1px 1px 1px #076282; }
+  * /deep/ button[accent-light][raised]:hover {
+    box-shadow: 0 2px 2.5px 1.5px #076282; }
+
+* /deep/ button[accent-dark][raised] {
+  box-shadow: 0 1px 1px 1px #021921; }
+  * /deep/ button[accent-dark][raised]:hover {
+    box-shadow: 0 2px 2.5px 1.5px #021921; }
+
+/*--------------------
+	Bordered Style
+--------------------*/
+* /deep/ button[border] {
+  border: 2px solid #ee7b00; }
+
+* /deep/ button[primary][border] {
+  border: 2px solid #ee7b00; }
+
+* /deep/ button[primary-light][border] {
+  border: 2px solid #ff9422; }
+
+* /deep/ button[primary-dark][border] {
+  border: 2px solid #bb6100; }
+
+* /deep/ button[secondary][border] {
+  border: 2px solid #FB7560; }
+
+* /deep/ button[secondary-light][border] {
+  border: 2px solid #fca092; }
+
+* /deep/ button[secondary-dark][border] {
+  border: 2px solid #fa4a2e; }
+
+* /deep/ button[accent][border] {
+  border: 2px solid #0A86B2; }
+
+* /deep/ button[accent-light][border] {
+  border: 2px solid #0daae2; }
+
+* /deep/ button[accent-dark][border] {
+  border: 2px solid #076282; }
+
+/*--------------------
+	Small Style
+--------------------*/
+* /deep/ button[small] {
+  padding: 0.4rem; }
+
+/*--------------------
+	big Style
+--------------------*/
+* /deep/ button[big] {
+  padding: 1rem;
+  font-weight: bold; }
+
+*, * /deep/ * {
+  font-family: 'Open Sans', sans-serif; }

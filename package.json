@@ -1,0 +1,22 @@
+{
+  "name": "horcrux-material",
+  "version": "0.0.0",
+  "main": "dist/horcrux-material",
+  "jspm": {
+    "registry": "github",
+    "directories": {
+      "lib": "dist"
+    },
+    "dependencies": {
+      "css": "systemjs/plugin-css@^0.1.18"
+    },
+    "devDependencies": {}
+  },
+  "devDependencies": {
+    "del": "^2.0.1",
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.0.4",
+    "jspm": "^0.16.2",
+    "require-dir": "^0.3.0"
+  }
+}

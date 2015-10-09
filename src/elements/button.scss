@@ -1,0 +1,113 @@
+$button-colors: $primary, $secondary, $accent;
+
+%button {
+	@include color();
+	
+	margin: 0.2rem 0.4rem;
+	padding: 0.8rem;
+	border: 0px transparent;
+	border-radius: 0.2rem;
+}
+
+* /deep/ button {
+	@extend %button;
+	&:hover {
+		box-shadow: 0 1px 1px 1px darken($primary, 20%);
+	}
+}
+
+@each $name, $color in $color-map {
+	* /deep/ button[#{$name}]:hover {
+		box-shadow: 0 1px 1px 1px darken($color, 20%);
+	}
+}
+
+
+/*--------------------
+	Flat Style
+--------------------*/
+
+@mixin flat($color:$primary) {
+	color: $color;
+	background-color: transparent;
+	box-shadow: none;
+	&:hover {
+		box-shadow: none;
+		text-decoration: underline;
+	}
+}
+
+* /deep/ button[flat] {
+	@include flat();
+}
+
+@each $name, $color in $color-map {
+	* /deep/ button[#{$name}][flat] {
+		@include flat($color);
+	}
+}
+
+
+/*--------------------
+	Raised Style
+--------------------*/
+
+@mixin raised($color:$primary) {
+	box-shadow: 0 1px 1px 1px darken($color, 20%);
+	&:hover {
+		box-shadow: 0 2px 2.5px 1.5px darken($color, 20%);		
+	} 
+}
+
+* /deep/ button[raised] {
+	@include raised();
+}
+
+@each $name, $color in $color-map {
+	* /deep/ button[#{$name}][raised] {
+		@include raised($color);
+	}
+}
+
+/*--------------------
+	Bordered Style
+--------------------*/
+
+@mixin bordered($color:$primary) {
+	border: 2px solid $color;
+}
+
+* /deep/ button[border] {
+	@include bordered();
+}
+
+@each $name, $color in $color-map {
+	* /deep/ button[#{$name}][border] {
+		@include bordered($color);
+	}
+}
+
+/*--------------------
+	Small Style
+--------------------*/
+
+@mixin small() {
+	padding: 0.4rem;
+}
+
+* /deep/ button[small] {
+	@include small();
+}
+
+/*--------------------
+	big Style
+--------------------*/
+
+@mixin big() {
+	padding: 1rem;
+	font-weight: bold;
+}
+
+* /deep/ button[big] {
+	@include big();
+}

@@ -1,0 +1,29 @@
+$primary: #ee7b00;
+$secondary: #FB7560;
+$accent: #0A86B2;
+$bright: #eee;
+$dark: #444;
+
+$lightness-factor: 10%;
+$color-map: (
+	primary: $primary,
+	primary-light: lighten($primary, $lightness-factor),
+	primary-dark: darken($primary, $lightness-factor),
+	secondary: $secondary,
+	secondary-light: lighten($secondary, $lightness-factor),
+	secondary-dark: darken($secondary, $lightness-factor),
+	accent:$accent,
+	accent-light: lighten($accent, $lightness-factor),
+	accent-dark: darken($accent, $lightness-factor)
+);
+
+@mixin color($c:$primary) {
+	background-color: $c;
+	color: if(lightness($c)>55, $dark, $bright);
+}
+
+@each $name, $color in $color-map {
+	* /deep/ *[#{$name}] {
+		@include color($color);
+	}
+}
