@@ -315,6 +315,33 @@ html {
   line-height: 1.25rem; }
   * /deep/ a:hover {
     text-decoration: underline; }
+  * /deep/ a[primary] {
+    background-color: transparent;
+    color: #ee7b00; }
+  * /deep/ a[primary-light] {
+    background-color: transparent;
+    color: #ff9422; }
+  * /deep/ a[primary-dark] {
+    background-color: transparent;
+    color: #bb6100; }
+  * /deep/ a[secondary] {
+    background-color: transparent;
+    color: #FB7560; }
+  * /deep/ a[secondary-light] {
+    background-color: transparent;
+    color: #fca092; }
+  * /deep/ a[secondary-dark] {
+    background-color: transparent;
+    color: #fa4a2e; }
+  * /deep/ a[accent] {
+    background-color: transparent;
+    color: #0A86B2; }
+  * /deep/ a[accent-light] {
+    background-color: transparent;
+    color: #0daae2; }
+  * /deep/ a[accent-dark] {
+    background-color: transparent;
+    color: #076282; }
 
 /*--------------------
 	Button Style

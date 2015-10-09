@@ -22,6 +22,13 @@ $link-colors: $primary, $secondary, $accent;
 		text-decoration: underline;
 	}
 	
+	@each $name, $color in $color-map {
+		&[#{$name}] {
+			@include color-text($color);
+		}
+	}
+
+	
 }
 
 
