@@ -1,56 +1,48 @@
-@import '../typeface/rhythm';
-
-$button-colors: $primary, $secondary, $accent;
+$link-colors: $primary, $secondary, $accent;
 
 /*----------------------------------------
  ----------------------------------------
-			Button Element (a)
+			Link Element (a)
  ----------------------------------------
 ----------------------------------------*/
 
-%button {
-	@include color();
+
+%a {
+	@include color-text();
 	
 	margin: 0.2rem 0.4rem;
 	padding: 0.8rem;
 	border: 0px transparent;
 	border-radius: 0.2rem;
+	text-decoration: none;
 	
 	@include type-setting(0);
 	
 	&:hover {
-		box-shadow: 0 1px 1px 1px darken($primary, 20%);
+		text-decoration: underline;
 	}
 	
-	@each $name, $color in $color-map {
-		&[#{$name}]:hover {
-			box-shadow: 0 1px 1px 1px darken($color, 20%);
-		}
-	}
 }
 
 
 /*--------------------
-	Flat Style
+	Button Style
 --------------------*/
 
-@mixin flat($color:$primary) {
-	color: $color;
-	background-color: transparent;
-	box-shadow: none;
+@mixin fat($color:$primary) {
+	@include color($color);	
 	&:hover {
-		box-shadow: none;
-		text-decoration: underline;
+		text-decoration: none;
 	}
 }
 
-%button[flat] {
-	@include flat();
+%a.btn {
+	@include fat();
 }
 
 @each $name, $color in $color-map {
-	%button[#{$name}][flat] {
-		@include flat($color);
+	%a.btn[#{$name}] {
+		@include fat($color);
 	}
 }
 
@@ -66,12 +58,12 @@ $button-colors: $primary, $secondary, $accent;
 	} 
 }
 
-%button[raised] {
+%a[raised] {
 	@include raised();
 }
 
 @each $name, $color in $color-map {
-	%button[#{$name}][raised] {
+	%a[#{$name}][raised] {
 		@include raised($color);
 	}
 }
@@ -84,12 +76,12 @@ $button-colors: $primary, $secondary, $accent;
 	border: 2px solid $color;
 }
 
-%button[border] {
+%a[border] {
 	@include bordered();
 }
 
 @each $name, $color in $color-map {
-	%button[#{$name}][border] {
+	%a[#{$name}][border] {
 		@include bordered($color);
 	}
 }
@@ -103,7 +95,7 @@ $button-colors: $primary, $secondary, $accent;
 	@include type-setting(-1);
 }
 
-%button[small] {
+%a[small] {
 	@include small();
 }
 
@@ -112,14 +104,14 @@ $button-colors: $primary, $secondary, $accent;
 --------------------*/
 
 @mixin big() {
-	padding: 0.8rem 1rem;
+	padding: 1rem;
 	@include type-setting(1);
 }
 
-%button[big] {
+%a[big] {
 	@include big();
 }
 
-* /deep/ button {
-	@extend %button;
+* /deep/ a {
+	@extend %a;
 }

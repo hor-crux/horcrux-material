@@ -1,0 +1,20 @@
+%header {
+	@include color();
+	
+	padding: 0.2rem 0.8rem;
+	
+	&[fixed] {
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+	}
+	
+	&[fixed] + * {
+		margin-top: 5rem;
+	}
+}
+
+* /deep/ header {
+	@extend %header;
+}

@@ -1,4 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+body {
+  margin: 0;
+  padding: 0; }
+
 * /deep/ *[primary] {
   background-color: #ee7b00;
   color: #eee; }
@@ -38,43 +42,46 @@
 html {
   font-size: 100%; }
 
+/*--------------------
+	Size Types
+--------------------*/
+/*--------------------
+	Line-Height Types
+--------------------*/
+/*----------------------------------------
+ ----------------------------------------
+			Button Element (a)
+ ----------------------------------------
+----------------------------------------*/
 * /deep/ button {
   background-color: #ee7b00;
   color: #eee;
   margin: 0.2rem 0.4rem;
   padding: 0.8rem;
   border: 0px transparent;
-  border-radius: 0.2rem; }
-
-* /deep/ button:hover {
-  box-shadow: 0 1px 1px 1px #884600; }
-
-* /deep/ button[primary]:hover {
-  box-shadow: 0 1px 1px 1px #884600; }
-
-* /deep/ button[primary-light]:hover {
-  box-shadow: 0 1px 1px 1px #bb6100; }
-
-* /deep/ button[primary-dark]:hover {
-  box-shadow: 0 1px 1px 1px #552c00; }
-
-* /deep/ button[secondary]:hover {
-  box-shadow: 0 1px 1px 1px #ef2606; }
-
-* /deep/ button[secondary-light]:hover {
-  box-shadow: 0 1px 1px 1px #fa4a2e; }
-
-* /deep/ button[secondary-dark]:hover {
-  box-shadow: 0 1px 1px 1px #bd1e05; }
-
-* /deep/ button[accent]:hover {
-  box-shadow: 0 1px 1px 1px #053d51; }
-
-* /deep/ button[accent-light]:hover {
-  box-shadow: 0 1px 1px 1px #076282; }
-
-* /deep/ button[accent-dark]:hover {
-  box-shadow: 0 1px 1px 1px #021921; }
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  line-height: 1.25rem; }
+  * /deep/ button:hover {
+    box-shadow: 0 1px 1px 1px #884600; }
+  * /deep/ button[primary]:hover {
+    box-shadow: 0 1px 1px 1px #884600; }
+  * /deep/ button[primary-light]:hover {
+    box-shadow: 0 1px 1px 1px #bb6100; }
+  * /deep/ button[primary-dark]:hover {
+    box-shadow: 0 1px 1px 1px #552c00; }
+  * /deep/ button[secondary]:hover {
+    box-shadow: 0 1px 1px 1px #ef2606; }
+  * /deep/ button[secondary-light]:hover {
+    box-shadow: 0 1px 1px 1px #fa4a2e; }
+  * /deep/ button[secondary-dark]:hover {
+    box-shadow: 0 1px 1px 1px #bd1e05; }
+  * /deep/ button[accent]:hover {
+    box-shadow: 0 1px 1px 1px #053d51; }
+  * /deep/ button[accent-light]:hover {
+    box-shadow: 0 1px 1px 1px #076282; }
+  * /deep/ button[accent-dark]:hover {
+    box-shadow: 0 1px 1px 1px #021921; }
 
 /*--------------------
 	Flat Style
@@ -249,14 +256,237 @@ html {
 	Small Style
 --------------------*/
 * /deep/ button[small] {
-  padding: 0.4rem; }
+  padding: 0.4rem;
+  font-size: 0.75rem;
+  line-height: 1.25rem; }
 
 /*--------------------
 	big Style
 --------------------*/
 * /deep/ button[big] {
+  padding: 0.8rem 1rem;
+  font-size: 1.333rem;
+  line-height: 2.5rem; }
+
+* /deep/ header {
+  background-color: #ee7b00;
+  color: #eee;
+  padding: 0.2rem 0.8rem; }
+  * /deep/ header[fixed] {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0; }
+  * /deep/ header[fixed] + * {
+    margin-top: 5rem; }
+
+/*--------------------
+	Size Types
+--------------------*/
+/*--------------------
+	Line-Height Types
+--------------------*/
+* /deep/ h1, * /deep/ h2 {
+  line-height: 2.5rem;
+  margin-bottom: 2.5rem; }
+
+* /deep/ h3, * /deep/ h4 {
+  line-height: 2.5rem;
+  margin-bottom: 2.5rem; }
+
+* /deep/ h5, * /deep/ h6 {
+  line-height: 1.25rem;
+  margin-bottom: 1.25rem; }
+
+/*----------------------------------------
+ ----------------------------------------
+			Link Element (a)
+ ----------------------------------------
+----------------------------------------*/
+* /deep/ a {
+  background-color: transparent;
+  color: #ee7b00;
+  margin: 0.2rem 0.4rem;
+  padding: 0.8rem;
+  border: 0px transparent;
+  border-radius: 0.2rem;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1.25rem; }
+  * /deep/ a:hover {
+    text-decoration: underline; }
+
+/*--------------------
+	Button Style
+--------------------*/
+* /deep/ a.btn {
+  background-color: #ee7b00;
+  color: #eee; }
+  * /deep/ a.btn:hover {
+    text-decoration: none; }
+
+* /deep/ a.btn[primary] {
+  background-color: #ee7b00;
+  color: #eee; }
+  * /deep/ a.btn[primary]:hover {
+    text-decoration: none; }
+
+* /deep/ a.btn[primary-light] {
+  background-color: #ff9422;
+  color: #444; }
+  * /deep/ a.btn[primary-light]:hover {
+    text-decoration: none; }
+
+* /deep/ a.btn[primary-dark] {
+  background-color: #bb6100;
+  color: #eee; }
+  * /deep/ a.btn[primary-dark]:hover {
+    text-decoration: none; }
+
+* /deep/ a.btn[secondary] {
+  background-color: #FB7560;
+  color: #444; }
+  * /deep/ a.btn[secondary]:hover {
+    text-decoration: none; }
+
+* /deep/ a.btn[secondary-light] {
+  background-color: #fca092;
+  color: #444; }
+  * /deep/ a.btn[secondary-light]:hover {
+    text-decoration: none; }
+
+* /deep/ a.btn[secondary-dark] {
+  background-color: #fa4a2e;
+  color: #444; }
+  * /deep/ a.btn[secondary-dark]:hover {
+    text-decoration: none; }
+
+* /deep/ a.btn[accent] {
+  background-color: #0A86B2;
+  color: #eee; }
+  * /deep/ a.btn[accent]:hover {
+    text-decoration: none; }
+
+* /deep/ a.btn[accent-light] {
+  background-color: #0daae2;
+  color: #eee; }
+  * /deep/ a.btn[accent-light]:hover {
+    text-decoration: none; }
+
+* /deep/ a.btn[accent-dark] {
+  background-color: #076282;
+  color: #eee; }
+  * /deep/ a.btn[accent-dark]:hover {
+    text-decoration: none; }
+
+/*--------------------
+	Raised Style
+--------------------*/
+* /deep/ a[raised] {
+  box-shadow: 0 1px 1px 1px #884600; }
+  * /deep/ a[raised]:hover {
+    box-shadow: 0 2px 2.5px 1.5px #884600; }
+
+* /deep/ a[primary][raised] {
+  box-shadow: 0 1px 1px 1px #884600; }
+  * /deep/ a[primary][raised]:hover {
+    box-shadow: 0 2px 2.5px 1.5px #884600; }
+
+* /deep/ a[primary-light][raised] {
+  box-shadow: 0 1px 1px 1px #bb6100; }
+  * /deep/ a[primary-light][raised]:hover {
+    box-shadow: 0 2px 2.5px 1.5px #bb6100; }
+
+* /deep/ a[primary-dark][raised] {
+  box-shadow: 0 1px 1px 1px #552c00; }
+  * /deep/ a[primary-dark][raised]:hover {
+    box-shadow: 0 2px 2.5px 1.5px #552c00; }
+
+* /deep/ a[secondary][raised] {
+  box-shadow: 0 1px 1px 1px #ef2606; }
+  * /deep/ a[secondary][raised]:hover {
+    box-shadow: 0 2px 2.5px 1.5px #ef2606; }
+
+* /deep/ a[secondary-light][raised] {
+  box-shadow: 0 1px 1px 1px #fa4a2e; }
+  * /deep/ a[secondary-light][raised]:hover {
+    box-shadow: 0 2px 2.5px 1.5px #fa4a2e; }
+
+* /deep/ a[secondary-dark][raised] {
+  box-shadow: 0 1px 1px 1px #bd1e05; }
+  * /deep/ a[secondary-dark][raised]:hover {
+    box-shadow: 0 2px 2.5px 1.5px #bd1e05; }
+
+* /deep/ a[accent][raised] {
+  box-shadow: 0 1px 1px 1px #053d51; }
+  * /deep/ a[accent][raised]:hover {
+    box-shadow: 0 2px 2.5px 1.5px #053d51; }
+
+* /deep/ a[accent-light][raised] {
+  box-shadow: 0 1px 1px 1px #076282; }
+  * /deep/ a[accent-light][raised]:hover {
+    box-shadow: 0 2px 2.5px 1.5px #076282; }
+
+* /deep/ a[accent-dark][raised] {
+  box-shadow: 0 1px 1px 1px #021921; }
+  * /deep/ a[accent-dark][raised]:hover {
+    box-shadow: 0 2px 2.5px 1.5px #021921; }
+
+/*--------------------
+	Bordered Style
+--------------------*/
+* /deep/ a[border] {
+  border: 2px solid #ee7b00; }
+
+* /deep/ a[primary][border] {
+  border: 2px solid #ee7b00; }
+
+* /deep/ a[primary-light][border] {
+  border: 2px solid #ff9422; }
+
+* /deep/ a[primary-dark][border] {
+  border: 2px solid #bb6100; }
+
+* /deep/ a[secondary][border] {
+  border: 2px solid #FB7560; }
+
+* /deep/ a[secondary-light][border] {
+  border: 2px solid #fca092; }
+
+* /deep/ a[secondary-dark][border] {
+  border: 2px solid #fa4a2e; }
+
+* /deep/ a[accent][border] {
+  border: 2px solid #0A86B2; }
+
+* /deep/ a[accent-light][border] {
+  border: 2px solid #0daae2; }
+
+* /deep/ a[accent-dark][border] {
+  border: 2px solid #076282; }
+
+/*--------------------
+	Small Style
+--------------------*/
+* /deep/ a[small] {
+  padding: 0.4rem;
+  font-size: 0.75rem;
+  line-height: 1.25rem; }
+
+/*--------------------
+	big Style
+--------------------*/
+* /deep/ a[big] {
   padding: 1rem;
-  font-weight: bold; }
+  font-size: 1.333rem;
+  line-height: 2.5rem; }
 
 *, * /deep/ * {
   font-family: 'Open Sans', sans-serif; }
+
+/*--------------------
+	Size Types
+--------------------*/
+/*--------------------
+	Line-Height Types
+--------------------*/

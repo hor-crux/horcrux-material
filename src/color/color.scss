@@ -22,6 +22,11 @@ $color-map: (
 	color: if(lightness($c)>55, $dark, $bright);
 }
 
+@mixin color-text($c:$primary) {
+	background-color: transparent;
+	color: $c;
+}
+
 @each $name, $color in $color-map {
 	* /deep/ *[#{$name}] {
 		@include color($color);
