@@ -1,0 +1,25 @@
+/*----------------------------------------
+ ----------------------------------------
+			Label Element (a)
+ ----------------------------------------
+----------------------------------------*/
+
+
+%label {
+	@include type-setting(0);
+	margin-bottom: 0.5rem;
+	
+	@include color-text($dark);
+	
+	border: none;
+
+	&[top] {
+		display: block;
+	}
+	
+}
+
+
+* /deep/ label {
+	@extend %label;
+}

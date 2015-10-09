@@ -1,0 +1,36 @@
+/*----------------------------------------
+ ----------------------------------------
+			Textarea Element
+ ----------------------------------------
+----------------------------------------*/
+
+
+%textarea {
+	@include type-setting(0);
+	
+	@include color-text($dark);
+	
+	border: 1px solid $dark;
+	outline: none;
+	
+	&:focus {
+		border-width: 2px;	
+	}
+	
+	@each $name, $color in $color-map {
+		&[#{$name}] {
+			border: 1px solid $color;
+			@include color-text($color);
+		}
+	}
+	
+	&[fixed] {
+		resize: none;
+	}
+	
+}
+
+
+* /deep/ textarea {
+	@extend %textarea;
+}

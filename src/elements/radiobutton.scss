@@ -1,0 +1,51 @@
+/*----------------------------------------
+ ----------------------------------------
+			Radiobutton Element (input[type="radio"])
+ ----------------------------------------
+----------------------------------------*/
+
+
+%radio {
+	&:not([native]) {
+		display: none;
+	}
+	
+	&:not([native]) + label::after {
+		content: "";
+		display: inline-block;
+		width: 0.8rem;
+		height: 0.8rem;
+		margin: 0.2rem;
+		
+		line-height: 0.8rem;
+		text-align: center;
+		vertical-align: middle;
+		
+		border: 1px solid $dark;
+		border-radius: 1000px;
+		font-weight: bold;
+	}
+	
+	@each $name, $color in $color-map {
+		&:not([native])[#{$name}] + label {
+			&::after {
+				border: 1px solid $color;
+				@include color-text($color);
+			}
+		}
+	}
+	
+	&:not([native]) + label[top]::after {
+		display: block;
+	}
+	
+	&:not([native]):checked + label::after {
+		content: "\2022";		
+	}
+	
+}
+
+
+* /deep/ input[type="radio"] {
+	@extend %radio;
+}

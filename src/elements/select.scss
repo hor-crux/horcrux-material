@@ -1,0 +1,29 @@
+/*----------------------------------------
+ ----------------------------------------
+			Select Element
+ ----------------------------------------
+----------------------------------------*/
+
+
+%select {
+	@include type-setting(0);
+	
+	@include color-text($dark);
+	
+	border: none;
+	border-bottom: 1px solid $dark;
+	outline: none;
+	
+	@each $name, $color in $color-map {
+		&[#{$name}] {
+			border-bottom: 1px solid $color;
+			@include color-text($color);
+		}
+	}
+	
+}
+
+
+* /deep/ select {
+	@extend %select;
+}

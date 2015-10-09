@@ -1,0 +1,31 @@
+/*----------------------------------------
+ ----------------------------------------
+			Legend Element (a)
+ ----------------------------------------
+----------------------------------------*/
+
+
+%legend {
+	@include type-setting(0);
+	margin: 0;
+	
+	@include color-text($dark);
+	
+	@each $name, $color in $color-map {
+		* /deep/ fieldset[#{$name}] > & {
+			@include color-text($color);
+		}
+	}
+	
+	@each $name, $color in $color-map {
+		&[#{$name}] {
+			@include color-text-important($color);
+		}
+	}
+	
+}
+
+
+* /deep/ legend {
+	@extend %legend;
+}

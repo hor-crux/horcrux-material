@@ -3,6 +3,21 @@ body {
   margin: 0;
   padding: 0; }
 
+* {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0; }
+
+*, * /deep/ * {
+  font-family: 'Open Sans', sans-serif; }
+
+/*--------------------
+	Size Types
+--------------------*/
+/*--------------------
+	Line-Height Types
+--------------------*/
 * /deep/ *[primary] {
   background-color: #ee7b00;
   color: #eee; }
@@ -58,18 +73,20 @@ html {
 --------------------*/
 /*----------------------------------------
  ----------------------------------------
-			Button Element (a)
+			Button Element
  ----------------------------------------
 ----------------------------------------*/
 * /deep/ button {
   background-color: #ee7b00;
   color: #eee;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
   margin: 0.2rem 0.4rem;
   padding: 0.8rem;
   border: 0px transparent;
   border-radius: 0.2rem;
-  font-size: 1rem;
-  line-height: 1.25rem; }
+  outline: none; }
   * /deep/ button:hover {
     box-shadow: 0 1px 1px 1px #884600; }
   * /deep/ button[primary]:hover {
@@ -300,17 +317,21 @@ html {
 	Small Style
 --------------------*/
 * /deep/ button[small] {
-  padding: 0.4rem;
   font-size: 0.75rem;
-  line-height: 1.25rem; }
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0.4rem;
+  margin: 0.2rem 0.4rem; }
 
 /*--------------------
 	big Style
 --------------------*/
 * /deep/ button[big] {
-  padding: 0.8rem 1rem;
   font-size: 1.333rem;
-  line-height: 2.5rem; }
+  line-height: 3rem;
+  margin-bottom: 3rem;
+  padding: 0.8rem 1rem;
+  margin: 0.2rem 0.4rem; }
 
 * /deep/ header {
   background-color: #ee7b00;
@@ -331,16 +352,19 @@ html {
 	Line-Height Types
 --------------------*/
 * /deep/ h1, * /deep/ h2 {
-  line-height: 2.5rem;
-  margin-bottom: 2.5rem; }
+  font-size: 1.777rem;
+  line-height: 3rem;
+  margin-bottom: 3rem; }
 
 * /deep/ h3, * /deep/ h4 {
-  line-height: 2.5rem;
-  margin-bottom: 2.5rem; }
+  font-size: 1.333rem;
+  line-height: 3rem;
+  margin-bottom: 3rem; }
 
 * /deep/ h5, * /deep/ h6 {
-  line-height: 1.25rem;
-  margin-bottom: 1.25rem; }
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem; }
 
 /*----------------------------------------
  ----------------------------------------
@@ -350,13 +374,15 @@ html {
 * /deep/ a {
   background-color: transparent;
   color: #ee7b00;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
   margin: 0.2rem 0.4rem;
   padding: 0.8rem;
   border: 0px transparent;
   border-radius: 0.2rem;
   text-decoration: none;
-  font-size: 1rem;
-  line-height: 1.25rem; }
+  outline: none; }
   * /deep/ a:hover {
     text-decoration: underline; }
   * /deep/ a[primary] {
@@ -576,7 +602,8 @@ html {
 * /deep/ a[small] {
   padding: 0.4rem;
   font-size: 0.75rem;
-  line-height: 1.25rem; }
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem; }
 
 /*--------------------
 	big Style
@@ -584,14 +611,616 @@ html {
 * /deep/ a[big] {
   padding: 1rem;
   font-size: 1.333rem;
-  line-height: 2.5rem; }
+  line-height: 3rem;
+  margin-bottom: 3rem; }
 
-*, * /deep/ * {
-  font-family: 'Open Sans', sans-serif; }
+/*----------------------------------------
+ ----------------------------------------
+			Paragraph Element (p)
+ ----------------------------------------
+----------------------------------------*/
+* /deep/ p, * /deep/ span {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem; }
+  * /deep/ p[primary], * /deep/ span[primary] {
+    background-color: transparent;
+    color: #ee7b00; }
+  * /deep/ p[primary-light], * /deep/ span[primary-light] {
+    background-color: transparent;
+    color: #ff9422; }
+  * /deep/ p[primary-dark], * /deep/ span[primary-dark] {
+    background-color: transparent;
+    color: #bb6100; }
+  * /deep/ p[secondary], * /deep/ span[secondary] {
+    background-color: transparent;
+    color: #FB7560; }
+  * /deep/ p[secondary-light], * /deep/ span[secondary-light] {
+    background-color: transparent;
+    color: #fca092; }
+  * /deep/ p[secondary-dark], * /deep/ span[secondary-dark] {
+    background-color: transparent;
+    color: #fa4a2e; }
+  * /deep/ p[accent], * /deep/ span[accent] {
+    background-color: transparent;
+    color: #0A86B2; }
+  * /deep/ p[accent-light], * /deep/ span[accent-light] {
+    background-color: transparent;
+    color: #0daae2; }
+  * /deep/ p[accent-dark], * /deep/ span[accent-dark] {
+    background-color: transparent;
+    color: #076282; }
+  * /deep/ p[dark], * /deep/ span[dark] {
+    background-color: transparent;
+    color: #444; }
+  * /deep/ p[bright], * /deep/ span[bright] {
+    background-color: transparent;
+    color: #eee; }
 
-/*--------------------
-	Size Types
---------------------*/
-/*--------------------
-	Line-Height Types
---------------------*/
+/*----------------------------------------
+ ----------------------------------------
+			Span Element
+ ----------------------------------------
+----------------------------------------*/
+/*----------------------------------------
+ ----------------------------------------
+			Fieldset Element (a)
+ ----------------------------------------
+----------------------------------------*/
+* /deep/ fieldset {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 2px;
+  border: 1px solid #444; }
+  * /deep/ fieldset[primary] {
+    border: 1px solid #ee7b00;
+    color: initial;
+    background-color: initial; }
+  * /deep/ fieldset[primary-light] {
+    border: 1px solid #ff9422;
+    color: initial;
+    background-color: initial; }
+  * /deep/ fieldset[primary-dark] {
+    border: 1px solid #bb6100;
+    color: initial;
+    background-color: initial; }
+  * /deep/ fieldset[secondary] {
+    border: 1px solid #FB7560;
+    color: initial;
+    background-color: initial; }
+  * /deep/ fieldset[secondary-light] {
+    border: 1px solid #fca092;
+    color: initial;
+    background-color: initial; }
+  * /deep/ fieldset[secondary-dark] {
+    border: 1px solid #fa4a2e;
+    color: initial;
+    background-color: initial; }
+  * /deep/ fieldset[accent] {
+    border: 1px solid #0A86B2;
+    color: initial;
+    background-color: initial; }
+  * /deep/ fieldset[accent-light] {
+    border: 1px solid #0daae2;
+    color: initial;
+    background-color: initial; }
+  * /deep/ fieldset[accent-dark] {
+    border: 1px solid #076282;
+    color: initial;
+    background-color: initial; }
+  * /deep/ fieldset[dark] {
+    border: 1px solid #444;
+    color: initial;
+    background-color: initial; }
+  * /deep/ fieldset[bright] {
+    border: 1px solid #eee;
+    color: initial;
+    background-color: initial; }
+
+/*----------------------------------------
+ ----------------------------------------
+			Legend Element (a)
+ ----------------------------------------
+----------------------------------------*/
+* /deep/ legend {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin: 0;
+  background-color: transparent;
+  color: #444; }
+  * /deep/ fieldset[primary] > legend {
+    background-color: transparent;
+    color: #ee7b00; }
+  * /deep/ fieldset[primary-light] > legend {
+    background-color: transparent;
+    color: #ff9422; }
+  * /deep/ fieldset[primary-dark] > legend {
+    background-color: transparent;
+    color: #bb6100; }
+  * /deep/ fieldset[secondary] > legend {
+    background-color: transparent;
+    color: #FB7560; }
+  * /deep/ fieldset[secondary-light] > legend {
+    background-color: transparent;
+    color: #fca092; }
+  * /deep/ fieldset[secondary-dark] > legend {
+    background-color: transparent;
+    color: #fa4a2e; }
+  * /deep/ fieldset[accent] > legend {
+    background-color: transparent;
+    color: #0A86B2; }
+  * /deep/ fieldset[accent-light] > legend {
+    background-color: transparent;
+    color: #0daae2; }
+  * /deep/ fieldset[accent-dark] > legend {
+    background-color: transparent;
+    color: #076282; }
+  * /deep/ fieldset[dark] > legend {
+    background-color: transparent;
+    color: #444; }
+  * /deep/ fieldset[bright] > legend {
+    background-color: transparent;
+    color: #eee; }
+  * /deep/ legend[primary] {
+    background-color: transparent !important;
+    color: #ee7b00 !important; }
+  * /deep/ legend[primary-light] {
+    background-color: transparent !important;
+    color: #ff9422 !important; }
+  * /deep/ legend[primary-dark] {
+    background-color: transparent !important;
+    color: #bb6100 !important; }
+  * /deep/ legend[secondary] {
+    background-color: transparent !important;
+    color: #FB7560 !important; }
+  * /deep/ legend[secondary-light] {
+    background-color: transparent !important;
+    color: #fca092 !important; }
+  * /deep/ legend[secondary-dark] {
+    background-color: transparent !important;
+    color: #fa4a2e !important; }
+  * /deep/ legend[accent] {
+    background-color: transparent !important;
+    color: #0A86B2 !important; }
+  * /deep/ legend[accent-light] {
+    background-color: transparent !important;
+    color: #0daae2 !important; }
+  * /deep/ legend[accent-dark] {
+    background-color: transparent !important;
+    color: #076282 !important; }
+  * /deep/ legend[dark] {
+    background-color: transparent !important;
+    color: #444 !important; }
+  * /deep/ legend[bright] {
+    background-color: transparent !important;
+    color: #eee !important; }
+
+/*----------------------------------------
+ ----------------------------------------
+			Input Element (a)
+ ----------------------------------------
+----------------------------------------*/
+* /deep/ input {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: transparent;
+  color: #444;
+  border: none;
+  border-bottom: 1px solid #444;
+  outline: none; }
+  * /deep/ input:focus {
+    border-width: 2px; }
+  * /deep/ input[primary] {
+    border-bottom: 1px solid #ee7b00;
+    background-color: transparent;
+    color: #ee7b00; }
+  * /deep/ input[primary-light] {
+    border-bottom: 1px solid #ff9422;
+    background-color: transparent;
+    color: #ff9422; }
+  * /deep/ input[primary-dark] {
+    border-bottom: 1px solid #bb6100;
+    background-color: transparent;
+    color: #bb6100; }
+  * /deep/ input[secondary] {
+    border-bottom: 1px solid #FB7560;
+    background-color: transparent;
+    color: #FB7560; }
+  * /deep/ input[secondary-light] {
+    border-bottom: 1px solid #fca092;
+    background-color: transparent;
+    color: #fca092; }
+  * /deep/ input[secondary-dark] {
+    border-bottom: 1px solid #fa4a2e;
+    background-color: transparent;
+    color: #fa4a2e; }
+  * /deep/ input[accent] {
+    border-bottom: 1px solid #0A86B2;
+    background-color: transparent;
+    color: #0A86B2; }
+  * /deep/ input[accent-light] {
+    border-bottom: 1px solid #0daae2;
+    background-color: transparent;
+    color: #0daae2; }
+  * /deep/ input[accent-dark] {
+    border-bottom: 1px solid #076282;
+    background-color: transparent;
+    color: #076282; }
+  * /deep/ input[dark] {
+    border-bottom: 1px solid #444;
+    background-color: transparent;
+    color: #444; }
+  * /deep/ input[bright] {
+    border-bottom: 1px solid #eee;
+    background-color: transparent;
+    color: #eee; }
+
+/*----------------------------------------
+ ----------------------------------------
+			Label Element (a)
+ ----------------------------------------
+----------------------------------------*/
+* /deep/ label {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
+  background-color: transparent;
+  color: #444;
+  border: none; }
+  * /deep/ label[top] {
+    display: block; }
+
+/*----------------------------------------
+ ----------------------------------------
+			Select Element
+ ----------------------------------------
+----------------------------------------*/
+* /deep/ select {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: transparent;
+  color: #444;
+  border: none;
+  border-bottom: 1px solid #444;
+  outline: none; }
+  * /deep/ select[primary] {
+    border-bottom: 1px solid #ee7b00;
+    background-color: transparent;
+    color: #ee7b00; }
+  * /deep/ select[primary-light] {
+    border-bottom: 1px solid #ff9422;
+    background-color: transparent;
+    color: #ff9422; }
+  * /deep/ select[primary-dark] {
+    border-bottom: 1px solid #bb6100;
+    background-color: transparent;
+    color: #bb6100; }
+  * /deep/ select[secondary] {
+    border-bottom: 1px solid #FB7560;
+    background-color: transparent;
+    color: #FB7560; }
+  * /deep/ select[secondary-light] {
+    border-bottom: 1px solid #fca092;
+    background-color: transparent;
+    color: #fca092; }
+  * /deep/ select[secondary-dark] {
+    border-bottom: 1px solid #fa4a2e;
+    background-color: transparent;
+    color: #fa4a2e; }
+  * /deep/ select[accent] {
+    border-bottom: 1px solid #0A86B2;
+    background-color: transparent;
+    color: #0A86B2; }
+  * /deep/ select[accent-light] {
+    border-bottom: 1px solid #0daae2;
+    background-color: transparent;
+    color: #0daae2; }
+  * /deep/ select[accent-dark] {
+    border-bottom: 1px solid #076282;
+    background-color: transparent;
+    color: #076282; }
+  * /deep/ select[dark] {
+    border-bottom: 1px solid #444;
+    background-color: transparent;
+    color: #444; }
+  * /deep/ select[bright] {
+    border-bottom: 1px solid #eee;
+    background-color: transparent;
+    color: #eee; }
+
+/*----------------------------------------
+ ----------------------------------------
+			Checkbox Element (input[type="checkbox"])
+ ----------------------------------------
+----------------------------------------*/
+* /deep/ input[type="checkbox"]:not([native]) {
+  display: none; }
+
+* /deep/ input[type="checkbox"]:not([native]) + label::after {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin: 0.2rem;
+  line-height: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #444;
+  font-weight: bold; }
+
+* /deep/ input[type="checkbox"]:not([native])[primary] + label::after {
+  border: 1px solid #ee7b00;
+  background-color: transparent;
+  color: #ee7b00; }
+
+* /deep/ input[type="checkbox"]:not([native])[primary-light] + label::after {
+  border: 1px solid #ff9422;
+  background-color: transparent;
+  color: #ff9422; }
+
+* /deep/ input[type="checkbox"]:not([native])[primary-dark] + label::after {
+  border: 1px solid #bb6100;
+  background-color: transparent;
+  color: #bb6100; }
+
+* /deep/ input[type="checkbox"]:not([native])[secondary] + label::after {
+  border: 1px solid #FB7560;
+  background-color: transparent;
+  color: #FB7560; }
+
+* /deep/ input[type="checkbox"]:not([native])[secondary-light] + label::after {
+  border: 1px solid #fca092;
+  background-color: transparent;
+  color: #fca092; }
+
+* /deep/ input[type="checkbox"]:not([native])[secondary-dark] + label::after {
+  border: 1px solid #fa4a2e;
+  background-color: transparent;
+  color: #fa4a2e; }
+
+* /deep/ input[type="checkbox"]:not([native])[accent] + label::after {
+  border: 1px solid #0A86B2;
+  background-color: transparent;
+  color: #0A86B2; }
+
+* /deep/ input[type="checkbox"]:not([native])[accent-light] + label::after {
+  border: 1px solid #0daae2;
+  background-color: transparent;
+  color: #0daae2; }
+
+* /deep/ input[type="checkbox"]:not([native])[accent-dark] + label::after {
+  border: 1px solid #076282;
+  background-color: transparent;
+  color: #076282; }
+
+* /deep/ input[type="checkbox"]:not([native])[dark] + label::after {
+  border: 1px solid #444;
+  background-color: transparent;
+  color: #444; }
+
+* /deep/ input[type="checkbox"]:not([native])[bright] + label::after {
+  border: 1px solid #eee;
+  background-color: transparent;
+  color: #eee; }
+
+* /deep/ input[type="checkbox"]:not([native]) + label[top]::after {
+  display: block; }
+
+* /deep/ input[type="checkbox"]:not([native]):checked + label::after {
+  content: "\2713"; }
+
+/*----------------------------------------
+ ----------------------------------------
+			Radiobutton Element (input[type="radio"])
+ ----------------------------------------
+----------------------------------------*/
+* /deep/ input[type="radio"]:not([native]) {
+  display: none; }
+
+* /deep/ input[type="radio"]:not([native]) + label::after {
+  content: "";
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin: 0.2rem;
+  line-height: 0.8rem;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #444;
+  border-radius: 1000px;
+  font-weight: bold; }
+
+* /deep/ input[type="radio"]:not([native])[primary] + label::after {
+  border: 1px solid #ee7b00;
+  background-color: transparent;
+  color: #ee7b00; }
+
+* /deep/ input[type="radio"]:not([native])[primary-light] + label::after {
+  border: 1px solid #ff9422;
+  background-color: transparent;
+  color: #ff9422; }
+
+* /deep/ input[type="radio"]:not([native])[primary-dark] + label::after {
+  border: 1px solid #bb6100;
+  background-color: transparent;
+  color: #bb6100; }
+
+* /deep/ input[type="radio"]:not([native])[secondary] + label::after {
+  border: 1px solid #FB7560;
+  background-color: transparent;
+  color: #FB7560; }
+
+* /deep/ input[type="radio"]:not([native])[secondary-light] + label::after {
+  border: 1px solid #fca092;
+  background-color: transparent;
+  color: #fca092; }
+
+* /deep/ input[type="radio"]:not([native])[secondary-dark] + label::after {
+  border: 1px solid #fa4a2e;
+  background-color: transparent;
+  color: #fa4a2e; }
+
+* /deep/ input[type="radio"]:not([native])[accent] + label::after {
+  border: 1px solid #0A86B2;
+  background-color: transparent;
+  color: #0A86B2; }
+
+* /deep/ input[type="radio"]:not([native])[accent-light] + label::after {
+  border: 1px solid #0daae2;
+  background-color: transparent;
+  color: #0daae2; }
+
+* /deep/ input[type="radio"]:not([native])[accent-dark] + label::after {
+  border: 1px solid #076282;
+  background-color: transparent;
+  color: #076282; }
+
+* /deep/ input[type="radio"]:not([native])[dark] + label::after {
+  border: 1px solid #444;
+  background-color: transparent;
+  color: #444; }
+
+* /deep/ input[type="radio"]:not([native])[bright] + label::after {
+  border: 1px solid #eee;
+  background-color: transparent;
+  color: #eee; }
+
+* /deep/ input[type="radio"]:not([native]) + label[top]::after {
+  display: block; }
+
+* /deep/ input[type="radio"]:not([native]):checked + label::after {
+  content: "\2022"; }
+
+/*----------------------------------------
+ ----------------------------------------
+			Textarea Element
+ ----------------------------------------
+----------------------------------------*/
+* /deep/ textarea {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: transparent;
+  color: #444;
+  border: 1px solid #444;
+  outline: none; }
+  * /deep/ textarea:focus {
+    border-width: 2px; }
+  * /deep/ textarea[primary] {
+    border: 1px solid #ee7b00;
+    background-color: transparent;
+    color: #ee7b00; }
+  * /deep/ textarea[primary-light] {
+    border: 1px solid #ff9422;
+    background-color: transparent;
+    color: #ff9422; }
+  * /deep/ textarea[primary-dark] {
+    border: 1px solid #bb6100;
+    background-color: transparent;
+    color: #bb6100; }
+  * /deep/ textarea[secondary] {
+    border: 1px solid #FB7560;
+    background-color: transparent;
+    color: #FB7560; }
+  * /deep/ textarea[secondary-light] {
+    border: 1px solid #fca092;
+    background-color: transparent;
+    color: #fca092; }
+  * /deep/ textarea[secondary-dark] {
+    border: 1px solid #fa4a2e;
+    background-color: transparent;
+    color: #fa4a2e; }
+  * /deep/ textarea[accent] {
+    border: 1px solid #0A86B2;
+    background-color: transparent;
+    color: #0A86B2; }
+  * /deep/ textarea[accent-light] {
+    border: 1px solid #0daae2;
+    background-color: transparent;
+    color: #0daae2; }
+  * /deep/ textarea[accent-dark] {
+    border: 1px solid #076282;
+    background-color: transparent;
+    color: #076282; }
+  * /deep/ textarea[dark] {
+    border: 1px solid #444;
+    background-color: transparent;
+    color: #444; }
+  * /deep/ textarea[bright] {
+    border: 1px solid #eee;
+    background-color: transparent;
+    color: #eee; }
+  * /deep/ textarea[fixed] {
+    resize: none; }
+
+* /deep/ *:target {
+  border-bottom: 0.2rem solid #bb6100; }
+  * /deep/ [primary]:target {
+    border-bottom: 0.2rem solid #bb6100; }
+  * /deep/ [primary-light]:target {
+    border-bottom: 0.2rem solid #ee7b00; }
+  * /deep/ [primary-dark]:target {
+    border-bottom: 0.2rem solid #884600; }
+  * /deep/ [secondary]:target {
+    border-bottom: 0.2rem solid #fa4a2e; }
+  * /deep/ [secondary-light]:target {
+    border-bottom: 0.2rem solid #fb7560; }
+  * /deep/ [secondary-dark]:target {
+    border-bottom: 0.2rem solid #ef2606; }
+  * /deep/ [accent]:target {
+    border-bottom: 0.2rem solid #076282; }
+  * /deep/ [accent-light]:target {
+    border-bottom: 0.2rem solid #0a86b2; }
+  * /deep/ [accent-dark]:target {
+    border-bottom: 0.2rem solid #053d51; }
+  * /deep/ [dark]:target {
+    border-bottom: 0.2rem solid #2b2b2b; }
+  * /deep/ [bright]:target {
+    border-bottom: 0.2rem solid #d4d4d4; }
+
+* /deep/ *[z-1] {
+  box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.2); }
+
+* /deep/ *[z-2] {
+  box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.2); }
+
+* /deep/ *[z-3] {
+  box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.2); }
+
+* /deep/ .card, * /deep/ .dialog {
+  box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.2);
+  padding: 1rem 2rem;
+  margin-bottom: 3rem; }
+  * /deep/ .card > .header, * /deep/ .dialog > .header {
+    margin: -1rem -2rem 1rem -2rem;
+    padding: 1rem 2rem 1rem 2rem;
+    border-bottom: 1px solid #444; }
+  * /deep/ .card > .footer, * /deep/ .dialog > .footer {
+    margin: 1rem -2rem -1rem -2rem;
+    padding: 1rem 2rem 1rem 2rem;
+    border-top: 1px solid #444; }
+
+* /deep/ .dialog {
+  background-color: white;
+  position: fixed;
+  width: 50%;
+  top: 25%;
+  left: 25%;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.75);
+  transition: opacity 0.15s, transform 0.15s; }
+  .dialog-open * /deep/ .dialog, * .dialog-open /deep/ .dialog {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: all; }
+
+.dialog-open /deep/ .overlay {
+  filter: blur(5px) grayscale(50%);
+  -webkit-filter: blur(5px) grayscale(50%);
+  pointer-events: none; }

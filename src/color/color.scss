@@ -29,6 +29,11 @@ $color-map: (
 	color: $c;
 }
 
+@mixin color-text-important($c:$primary) {
+	background-color: transparent !important;
+	color: $c !important;
+}
+
 @each $name, $color in $color-map {
 	* /deep/ *[#{$name}] {
 		@include color($color);

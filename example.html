@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+	<link rel="stylesheet" href="./dist/horcrux-material.css">
+	
+	<style>
+		main {
+			padding: 5rem 15rem;
+			display:flex;			
+		}
+		
+		nav {
+			position:fixed;
+			left: 0;
+		}
+	</style>
+	
+	<div class="overlay">
+	<header fixed>
+		<h1>Horcrux-Material
+	</header>
+	<main>
+		<nav>
+			<ul>
+				<li><a href="#typo">Typographie</a></li>
+				<li><a href="#color">Color</a></li>
+				<li><a href="#button">Button</a></li>
+				<li><a href="#link">Link</a></li>
+				<li><a href="#forms">Forms</a></li>
+			</ul>
+		</nav>
+		<section>
+			<h2 id="typo">Typographie</h2>
+			<hr>	
+			<div>
+				<h1>H1
+				<h2>H2
+				<h3>H3
+				<h4>H4
+				<h5>H5
+				<h6>H6</h6>
+				<span>Span inline element</span>
+				<p>
+					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+				</p>		
+			</div>
+			
+			<h2 id="color">Colors</h2>
+			<hr>	
+			<div>
+				<button primary>primary
+				<button primary-light>primary-light
+				<button primary-dark>primary-dark
+				<button secondary>secondary
+				<button secondary-light>secondary-light
+				<button secondary-dark>secondary-dark
+				<button accent>accent
+				<button accent-light>accent-light
+				<button accent-dark>accent-dark</button>
+			</div>
+			
+			<h2 id="button">Buttons</h2>
+			<hr>
+			<div>
+				<button>Button primary
+				<button flat>Button flat
+				<button flat border>Button flat & bordered
+				<button raised> Button Raised
+				<button small> Button Small
+				<button big> Button Big</button>
+			</div>
+				
+			<h2 id="link">Links</h2>
+			<hr>
+			<div>
+				<a>Link</a>
+				<a class="btn">Link with button-style</a>
+				<a border>Link bordered</a>
+				<a class="btn" raised>Link Raised</a>
+				<a small>Link Small</a>
+				<a big>Link Big</a>
+			</div>
+			
+			<h2 id="forms">Forms</h2>
+			<hr>
+			<form>
+				<fieldset>
+					<legend>Text Input</legend>
+					<label for="input-1">Normal Intput</label>
+					<input id="input-1" placeholder="type here...">
+					<label for="input-2" top>Normal Intput</label>
+					<input id="input-2" placeholder="top label">
+					<label for="textarea-1" top>Textarea</label>
+					<textarea id="textarea-1" placeholder="text..." fixed></textarea>
+				</fieldset>
+				<fieldset>
+					<legend>Select Input</legend>
+					<label for="select-1" top>Normal Select</label>
+					<select id="select-1">
+						<option selected>One</option>
+						<option>One</option>
+						<option>One</option>
+					</select>
+				</fieldset>
+				<fieldset secondary-light>
+					<legend>Checkbox Input</legend>
+					<input id="checkbox-1" type="checkbox">
+					<label for="checkbox-1" >One</label>
+					<input id="checkbox-2" type="checkbox" accent>
+					<label for="checkbox-2" >Two</label>
+					<label for="checkbox-3" >Native</label>
+					<input id="checkbox-3" type="checkbox" native >
+				</fieldset>
+				<fieldset primary>
+					<legend accent>Checkbox Input</legend>
+					<input id="radio-1" type="radio" name="rg1" value="one">
+					<label for="radio-1">One</label>
+					<input id="radio-2" type="radio" name="rg1" value="two" secondary>
+					<label for="radio-2">Two</label>
+				</fieldset>
+			</form>
+			
+			<h2 id="classes">Classes</h2>
+			<hr>
+			<h3>Cards</h3>
+			<div class="card">
+				<div class="header">
+					<h3 style="margin:0">Title</h3>
+				</div>
+				<p>
+					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+				</p>
+				<div class="footer">
+					<button>Ok</button>
+				</div>
+			</div>
+			<div style="display:flex">
+				<div class="card" >
+					<div class="header">
+						<h3 style="margin:0">Title</h3>
+					</div>
+					<p>
+						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+					</p>				
+				</div>
+				
+				<div style="width:10rem;"></div>
+				
+				<div class="card" >
+					<p>
+						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+					</p>
+					<div class="footer">
+						<button>Ok</button>
+						<button accent>Cancel</button>
+					</div>			
+				</div>
+			</div>
+			
+			<h3>Dialog</h3>
+			<button onclick="toggleDialog(event);">Toggle Dialog</button>
+			
+		</section>
+	</main>
+	</div>
+	<script>
+		function toggleDialog(e) {
+			var c = 'dialog-open';
+			var element = document.body;
+			var classes = element.className.match(/\S+/g) || [];
+			var index = classes.indexOf(c);
+			index >= 0 ? classes.splice(index, 1) : classes.push(c);
+			element.className = classes.join(' ');
+			
+			e.stopPropagation();
+		}
+		
+	</script>
+	<div id="dialog-1" class="dialog">
+		<p>
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+		</p>
+		<div class="footer" style="display:flex; justify-content:flex-end;">
+			<button secondary onclick="document.body.className = '';">close</button>
+		</div>
+	</div>

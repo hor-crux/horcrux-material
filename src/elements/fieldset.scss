@@ -1,0 +1,26 @@
+/*----------------------------------------
+ ----------------------------------------
+			Fieldset Element (a)
+ ----------------------------------------
+----------------------------------------*/
+
+
+%fieldset {
+	@include type-setting(0);
+	
+	border-radius: 2px;
+	border: 1px solid $dark;
+	
+	@each $name, $color in $color-map {
+		&[#{$name}] {
+			border: 1px solid $color;
+			color: initial;
+			background-color: initial;
+		}
+	}
+}
+
+
+* /deep/ fieldset {
+	@extend %fieldset;
+}

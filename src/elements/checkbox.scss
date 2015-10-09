@@ -1,0 +1,52 @@
+/*----------------------------------------
+ ----------------------------------------
+			Checkbox Element (input[type="checkbox"])
+ ----------------------------------------
+----------------------------------------*/
+
+
+%checkbox {
+	
+	&:not([native]) {
+		display: none;
+	}
+	
+	&:not([native]) + label::after {
+		content: "";
+		display: inline-block;
+		width: 1rem;
+		height: 1rem;
+		margin: 0.2rem;
+		
+		line-height: 1rem;
+		text-align: center;
+		vertical-align: middle;
+		
+		border: 1px solid $dark;
+		font-weight: bold;
+	}
+	
+	@each $name, $color in $color-map {
+		&:not([native])[#{$name}] + label {
+			&::after {
+				border: 1px solid $color;
+				@include color-text($color);
+			}
+		}
+	}
+	
+	&:not([native]) + label[top]::after {
+		display: block;
+	}
+	
+	&:not([native]):checked + label::after {
+		content: "\2713";		
+	}
+	
+	
+}
+
+
+* /deep/ input[type="checkbox"] {
+	@extend %checkbox;
+}

@@ -4,19 +4,20 @@ $button-colors: $primary, $secondary, $accent;
 
 /*----------------------------------------
  ----------------------------------------
-			Button Element (a)
+			Button Element
  ----------------------------------------
 ----------------------------------------*/
 
 %button {
 	@include color();
+	@include type-setting(0);
 	
 	margin: 0.2rem 0.4rem;
 	padding: 0.8rem;
 	border: 0px transparent;
 	border-radius: 0.2rem;
+	outline: none;
 	
-	@include type-setting(0);
 	
 	&:hover {
 		box-shadow: 0 1px 1px 1px darken($primary, 20%);
@@ -99,8 +100,9 @@ $button-colors: $primary, $secondary, $accent;
 --------------------*/
 
 @mixin small() {
-	padding: 0.4rem;
 	@include type-setting(-1);
+	padding: 0.4rem;
+	margin: 0.2rem 0.4rem;
 }
 
 %button[small] {
@@ -112,8 +114,9 @@ $button-colors: $primary, $secondary, $accent;
 --------------------*/
 
 @mixin big() {
-	padding: 0.8rem 1rem;
 	@include type-setting(1);
+	padding: 0.8rem 1rem;
+	margin: 0.2rem 0.4rem;
 }
 
 %button[big] {

@@ -1,0 +1,22 @@
+/*----------------------------------------
+ ----------------------------------------
+			Span Element
+ ----------------------------------------
+----------------------------------------*/
+
+
+%span {
+	display: inline-block;
+	@include type-setting(0);
+	
+	@each $name, $color in $color-map {
+		&[#{$name}] {
+			@include color-text($color);
+		}
+	}
+}
+
+
+* /deep/ span {
+	@extend %p;
+}

@@ -1,0 +1,21 @@
+%card {
+	@include z(1);
+	padding: 1rem 2rem;
+	margin-bottom: $base-line-height * 2;
+	
+	& > .header {
+		margin: -1rem -2rem 1rem -2rem;
+		padding: 1rem 2rem 1rem 2rem;
+		border-bottom: 1px solid $dark;
+	}
+	
+	& > .footer {
+		margin: 1rem -2rem -1rem -2rem;
+		padding: 1rem 2rem 1rem 2rem;
+		border-top: 1px solid $dark;
+	}
+}
+
+* /deep/ .card {
+	@extend %card;
+}

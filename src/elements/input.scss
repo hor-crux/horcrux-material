@@ -1,0 +1,34 @@
+/*----------------------------------------
+ ----------------------------------------
+			Input Element (a)
+ ----------------------------------------
+----------------------------------------*/
+
+
+%input {
+	@include type-setting(0);
+	
+	@include color-text($dark);
+	
+	border: none;
+	border-bottom: 1px solid $dark;
+	outline: none;
+	
+	&:focus {
+		border-width: 2px;	
+	}
+	
+	@each $name, $color in $color-map {
+		&[#{$name}] {
+			border-bottom: 1px solid $color;
+			@include color-text($color);
+		}
+	}
+	
+	
+}
+
+
+* /deep/ input {
+	@extend %input;
+}

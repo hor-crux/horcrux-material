@@ -1,0 +1,19 @@
+@mixin targeted($color:$primary) {
+	border-bottom: 0.2rem solid darken($color, $lightness-factor);	
+}
+
+
+
+%targeted {
+	@include targeted();
+	
+	@each $name, $color in $color-map {
+		&[#{$name}] {
+			@include targeted($color);
+		}
+	}
+}
+
+* /deep/ *:target {
+	@extend %targeted;
+}

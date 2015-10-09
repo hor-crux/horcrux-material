@@ -1,0 +1,11 @@
+$z-level: 1 2 3;
+
+@mixin z($level:1) {
+	box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+@each $level in $z-level {
+	* /deep/ *[z-#{$level}] {
+		@include z($level);
+	}
+}
