@@ -39,6 +39,14 @@ body {
   background-color: #076282;
   color: #eee; }
 
+* /deep/ *[dark] {
+  background-color: #444;
+  color: #eee; }
+
+* /deep/ *[bright] {
+  background-color: #eee;
+  color: #444; }
+
 html {
   font-size: 100%; }
 
@@ -82,6 +90,10 @@ html {
     box-shadow: 0 1px 1px 1px #076282; }
   * /deep/ button[accent-dark]:hover {
     box-shadow: 0 1px 1px 1px #021921; }
+  * /deep/ button[dark]:hover {
+    box-shadow: 0 1px 1px 1px #111111; }
+  * /deep/ button[bright]:hover {
+    box-shadow: 0 1px 1px 1px #bbbbbb; }
 
 /*--------------------
 	Flat Style
@@ -166,6 +178,22 @@ html {
     box-shadow: none;
     text-decoration: underline; }
 
+* /deep/ button[dark][flat] {
+  color: #444;
+  background-color: transparent;
+  box-shadow: none; }
+  * /deep/ button[dark][flat]:hover {
+    box-shadow: none;
+    text-decoration: underline; }
+
+* /deep/ button[bright][flat] {
+  color: #eee;
+  background-color: transparent;
+  box-shadow: none; }
+  * /deep/ button[bright][flat]:hover {
+    box-shadow: none;
+    text-decoration: underline; }
+
 /*--------------------
 	Raised Style
 --------------------*/
@@ -219,6 +247,16 @@ html {
   * /deep/ button[accent-dark][raised]:hover {
     box-shadow: 0 2px 2.5px 1.5px #021921; }
 
+* /deep/ button[dark][raised] {
+  box-shadow: 0 1px 1px 1px #111111; }
+  * /deep/ button[dark][raised]:hover {
+    box-shadow: 0 2px 2.5px 1.5px #111111; }
+
+* /deep/ button[bright][raised] {
+  box-shadow: 0 1px 1px 1px #bbbbbb; }
+  * /deep/ button[bright][raised]:hover {
+    box-shadow: 0 2px 2.5px 1.5px #bbbbbb; }
+
 /*--------------------
 	Bordered Style
 --------------------*/
@@ -251,6 +289,12 @@ html {
 
 * /deep/ button[accent-dark][border] {
   border: 2px solid #076282; }
+
+* /deep/ button[dark][border] {
+  border: 2px solid #444; }
+
+* /deep/ button[bright][border] {
+  border: 2px solid #eee; }
 
 /*--------------------
 	Small Style
@@ -342,6 +386,12 @@ html {
   * /deep/ a[accent-dark] {
     background-color: transparent;
     color: #076282; }
+  * /deep/ a[dark] {
+    background-color: transparent;
+    color: #444; }
+  * /deep/ a[bright] {
+    background-color: transparent;
+    color: #eee; }
 
 /*--------------------
 	Button Style
@@ -406,6 +456,18 @@ html {
   * /deep/ a.btn[accent-dark]:hover {
     text-decoration: none; }
 
+* /deep/ a.btn[dark] {
+  background-color: #444;
+  color: #eee; }
+  * /deep/ a.btn[dark]:hover {
+    text-decoration: none; }
+
+* /deep/ a.btn[bright] {
+  background-color: #eee;
+  color: #444; }
+  * /deep/ a.btn[bright]:hover {
+    text-decoration: none; }
+
 /*--------------------
 	Raised Style
 --------------------*/
@@ -459,6 +521,16 @@ html {
   * /deep/ a[accent-dark][raised]:hover {
     box-shadow: 0 2px 2.5px 1.5px #021921; }
 
+* /deep/ a[dark][raised] {
+  box-shadow: 0 1px 1px 1px #111111; }
+  * /deep/ a[dark][raised]:hover {
+    box-shadow: 0 2px 2.5px 1.5px #111111; }
+
+* /deep/ a[bright][raised] {
+  box-shadow: 0 1px 1px 1px #bbbbbb; }
+  * /deep/ a[bright][raised]:hover {
+    box-shadow: 0 2px 2.5px 1.5px #bbbbbb; }
+
 /*--------------------
 	Bordered Style
 --------------------*/
@@ -491,6 +563,12 @@ html {
 
 * /deep/ a[accent-dark][border] {
   border: 2px solid #076282; }
+
+* /deep/ a[dark][border] {
+  border: 2px solid #444; }
+
+* /deep/ a[bright][border] {
+  border: 2px solid #eee; }
 
 /*--------------------
 	Small Style

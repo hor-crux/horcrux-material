@@ -14,7 +14,9 @@ $color-map: (
 	secondary-dark: darken($secondary, $lightness-factor),
 	accent:$accent,
 	accent-light: lighten($accent, $lightness-factor),
-	accent-dark: darken($accent, $lightness-factor)
+	accent-dark: darken($accent, $lightness-factor),
+	dark: $dark,
+	bright: $bright
 );
 
 @mixin color($c:$primary) {
