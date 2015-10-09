@@ -20,10 +20,6 @@
 	
 }
 
-.overlay {
-	
-}
-
 .dialog-open /deep/ .overlay {
 	filter: blur(5px) grayscale(50%);
 	-webkit-filter: blur(5px) grayscale(50%);

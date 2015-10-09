@@ -7,13 +7,14 @@
 %targeted {
 	@include targeted();
 	
-	@each $name, $color in $color-map {
-		&[#{$name}] {
-			@include targeted($color);
-		}
-	}
 }
 
 * /deep/ *:target {
 	@extend %targeted;
+}
+
+@each $name, $color in $color-map {
+	* /deep/ *[#{$name}]:target {
+		@include targeted($color);
+	}
 }
