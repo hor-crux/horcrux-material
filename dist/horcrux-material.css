@@ -812,7 +812,8 @@ html {
   border-bottom: 1px solid #444;
   outline: none; }
   * /deep/ input:focus {
-    border-width: 2px; }
+    border-width: 2px;
+    padding-bottom: 0; }
   * /deep/ input[primary] {
     border-bottom: 1px solid #ee7b00;
     background-color: transparent;
@@ -1110,7 +1111,8 @@ html {
   border: 1px solid #444;
   outline: none; }
   * /deep/ textarea:focus {
-    border-width: 2px; }
+    border-width: 2px;
+    padding: 1px; }
   * /deep/ textarea[primary] {
     border: 1px solid #ee7b00;
     background-color: transparent;

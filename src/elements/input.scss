@@ -15,7 +15,8 @@
 	outline: none;
 	
 	&:focus {
-		border-width: 2px;	
+		border-width: 2px;
+		padding-bottom: 0;
 	}
 	
 	@each $name, $color in $color-map {
