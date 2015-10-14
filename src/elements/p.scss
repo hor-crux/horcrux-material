@@ -16,6 +16,6 @@
 }
 
 
-* /deep/ p {
+p, * /deep/ p {
 	@extend %p;
 }

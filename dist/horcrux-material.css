@@ -18,47 +18,47 @@ body {
 /*--------------------
 	Line-Height Types
 --------------------*/
-* /deep/ *[primary] {
+*[primary], * /deep/ *[primary] {
   background-color: #ee7b00;
   color: #eee; }
 
-* /deep/ *[primary-light] {
+*[primary-light], * /deep/ *[primary-light] {
   background-color: #ff9422;
   color: #444; }
 
-* /deep/ *[primary-dark] {
+*[primary-dark], * /deep/ *[primary-dark] {
   background-color: #bb6100;
   color: #eee; }
 
-* /deep/ *[secondary] {
+*[secondary], * /deep/ *[secondary] {
   background-color: #FB7560;
   color: #444; }
 
-* /deep/ *[secondary-light] {
+*[secondary-light], * /deep/ *[secondary-light] {
   background-color: #fca092;
   color: #444; }
 
-* /deep/ *[secondary-dark] {
+*[secondary-dark], * /deep/ *[secondary-dark] {
   background-color: #fa4a2e;
   color: #444; }
 
-* /deep/ *[accent] {
+*[accent], * /deep/ *[accent] {
   background-color: #0A86B2;
   color: #eee; }
 
-* /deep/ *[accent-light] {
+*[accent-light], * /deep/ *[accent-light] {
   background-color: #0daae2;
   color: #eee; }
 
-* /deep/ *[accent-dark] {
+*[accent-dark], * /deep/ *[accent-dark] {
   background-color: #076282;
   color: #eee; }
 
-* /deep/ *[dark] {
+*[dark], * /deep/ *[dark] {
   background-color: #444;
   color: #eee; }
 
-* /deep/ *[bright] {
+*[bright], * /deep/ *[bright] {
   background-color: #eee;
   color: #444; }
 
@@ -76,7 +76,7 @@ html {
 			Button Element
  ----------------------------------------
 ----------------------------------------*/
-* /deep/ button {
+button, * /deep/ button {
   background-color: #ee7b00;
   color: #eee;
   font-size: 1rem;
@@ -87,236 +87,236 @@ html {
   border: 0px transparent;
   border-radius: 0.2rem;
   outline: none; }
-  * /deep/ button:hover {
+  button:hover {
     box-shadow: 0 1px 1px 1px #884600; }
-  * /deep/ button[primary]:hover {
+  button[primary]:hover {
     box-shadow: 0 1px 1px 1px #884600; }
-  * /deep/ button[primary-light]:hover {
+  button[primary-light]:hover {
     box-shadow: 0 1px 1px 1px #bb6100; }
-  * /deep/ button[primary-dark]:hover {
+  button[primary-dark]:hover {
     box-shadow: 0 1px 1px 1px #552c00; }
-  * /deep/ button[secondary]:hover {
+  button[secondary]:hover {
     box-shadow: 0 1px 1px 1px #ef2606; }
-  * /deep/ button[secondary-light]:hover {
+  button[secondary-light]:hover {
     box-shadow: 0 1px 1px 1px #fa4a2e; }
-  * /deep/ button[secondary-dark]:hover {
+  button[secondary-dark]:hover {
     box-shadow: 0 1px 1px 1px #bd1e05; }
-  * /deep/ button[accent]:hover {
+  button[accent]:hover {
     box-shadow: 0 1px 1px 1px #053d51; }
-  * /deep/ button[accent-light]:hover {
+  button[accent-light]:hover {
     box-shadow: 0 1px 1px 1px #076282; }
-  * /deep/ button[accent-dark]:hover {
+  button[accent-dark]:hover {
     box-shadow: 0 1px 1px 1px #021921; }
-  * /deep/ button[dark]:hover {
+  button[dark]:hover {
     box-shadow: 0 1px 1px 1px #111111; }
-  * /deep/ button[bright]:hover {
+  button[bright]:hover {
     box-shadow: 0 1px 1px 1px #bbbbbb; }
 
 /*--------------------
 	Flat Style
 --------------------*/
-* /deep/ button[flat] {
+button[flat] {
   color: #ee7b00;
   background-color: transparent;
   box-shadow: none; }
-  * /deep/ button[flat]:hover {
+  button[flat]:hover {
     box-shadow: none;
     text-decoration: underline; }
 
-* /deep/ button[primary][flat] {
+button[primary][flat] {
   color: #ee7b00;
   background-color: transparent;
   box-shadow: none; }
-  * /deep/ button[primary][flat]:hover {
+  button[primary][flat]:hover {
     box-shadow: none;
     text-decoration: underline; }
 
-* /deep/ button[primary-light][flat] {
+button[primary-light][flat] {
   color: #ff9422;
   background-color: transparent;
   box-shadow: none; }
-  * /deep/ button[primary-light][flat]:hover {
+  button[primary-light][flat]:hover {
     box-shadow: none;
     text-decoration: underline; }
 
-* /deep/ button[primary-dark][flat] {
+button[primary-dark][flat] {
   color: #bb6100;
   background-color: transparent;
   box-shadow: none; }
-  * /deep/ button[primary-dark][flat]:hover {
+  button[primary-dark][flat]:hover {
     box-shadow: none;
     text-decoration: underline; }
 
-* /deep/ button[secondary][flat] {
+button[secondary][flat] {
   color: #FB7560;
   background-color: transparent;
   box-shadow: none; }
-  * /deep/ button[secondary][flat]:hover {
+  button[secondary][flat]:hover {
     box-shadow: none;
     text-decoration: underline; }
 
-* /deep/ button[secondary-light][flat] {
+button[secondary-light][flat] {
   color: #fca092;
   background-color: transparent;
   box-shadow: none; }
-  * /deep/ button[secondary-light][flat]:hover {
+  button[secondary-light][flat]:hover {
     box-shadow: none;
     text-decoration: underline; }
 
-* /deep/ button[secondary-dark][flat] {
+button[secondary-dark][flat] {
   color: #fa4a2e;
   background-color: transparent;
   box-shadow: none; }
-  * /deep/ button[secondary-dark][flat]:hover {
+  button[secondary-dark][flat]:hover {
     box-shadow: none;
     text-decoration: underline; }
 
-* /deep/ button[accent][flat] {
+button[accent][flat] {
   color: #0A86B2;
   background-color: transparent;
   box-shadow: none; }
-  * /deep/ button[accent][flat]:hover {
+  button[accent][flat]:hover {
     box-shadow: none;
     text-decoration: underline; }
 
-* /deep/ button[accent-light][flat] {
+button[accent-light][flat] {
   color: #0daae2;
   background-color: transparent;
   box-shadow: none; }
-  * /deep/ button[accent-light][flat]:hover {
+  button[accent-light][flat]:hover {
     box-shadow: none;
     text-decoration: underline; }
 
-* /deep/ button[accent-dark][flat] {
+button[accent-dark][flat] {
   color: #076282;
   background-color: transparent;
   box-shadow: none; }
-  * /deep/ button[accent-dark][flat]:hover {
+  button[accent-dark][flat]:hover {
     box-shadow: none;
     text-decoration: underline; }
 
-* /deep/ button[dark][flat] {
+button[dark][flat] {
   color: #444;
   background-color: transparent;
   box-shadow: none; }
-  * /deep/ button[dark][flat]:hover {
+  button[dark][flat]:hover {
     box-shadow: none;
     text-decoration: underline; }
 
-* /deep/ button[bright][flat] {
+button[bright][flat] {
   color: #eee;
   background-color: transparent;
   box-shadow: none; }
-  * /deep/ button[bright][flat]:hover {
+  button[bright][flat]:hover {
     box-shadow: none;
     text-decoration: underline; }
 
 /*--------------------
 	Raised Style
 --------------------*/
-* /deep/ button[raised] {
+button[raised] {
   box-shadow: 0 1px 1px 1px #884600; }
-  * /deep/ button[raised]:hover {
+  button[raised]:hover {
     box-shadow: 0 2px 2.5px 1.5px #884600; }
 
-* /deep/ button[primary][raised] {
+button[primary][raised] {
   box-shadow: 0 1px 1px 1px #884600; }
-  * /deep/ button[primary][raised]:hover {
+  button[primary][raised]:hover {
     box-shadow: 0 2px 2.5px 1.5px #884600; }
 
-* /deep/ button[primary-light][raised] {
+button[primary-light][raised] {
   box-shadow: 0 1px 1px 1px #bb6100; }
-  * /deep/ button[primary-light][raised]:hover {
+  button[primary-light][raised]:hover {
     box-shadow: 0 2px 2.5px 1.5px #bb6100; }
 
-* /deep/ button[primary-dark][raised] {
+button[primary-dark][raised] {
   box-shadow: 0 1px 1px 1px #552c00; }
-  * /deep/ button[primary-dark][raised]:hover {
+  button[primary-dark][raised]:hover {
     box-shadow: 0 2px 2.5px 1.5px #552c00; }
 
-* /deep/ button[secondary][raised] {
+button[secondary][raised] {
   box-shadow: 0 1px 1px 1px #ef2606; }
-  * /deep/ button[secondary][raised]:hover {
+  button[secondary][raised]:hover {
     box-shadow: 0 2px 2.5px 1.5px #ef2606; }
 
-* /deep/ button[secondary-light][raised] {
+button[secondary-light][raised] {
   box-shadow: 0 1px 1px 1px #fa4a2e; }
-  * /deep/ button[secondary-light][raised]:hover {
+  button[secondary-light][raised]:hover {
     box-shadow: 0 2px 2.5px 1.5px #fa4a2e; }
 
-* /deep/ button[secondary-dark][raised] {
+button[secondary-dark][raised] {
   box-shadow: 0 1px 1px 1px #bd1e05; }
-  * /deep/ button[secondary-dark][raised]:hover {
+  button[secondary-dark][raised]:hover {
     box-shadow: 0 2px 2.5px 1.5px #bd1e05; }
 
-* /deep/ button[accent][raised] {
+button[accent][raised] {
   box-shadow: 0 1px 1px 1px #053d51; }
-  * /deep/ button[accent][raised]:hover {
+  button[accent][raised]:hover {
     box-shadow: 0 2px 2.5px 1.5px #053d51; }
 
-* /deep/ button[accent-light][raised] {
+button[accent-light][raised] {
   box-shadow: 0 1px 1px 1px #076282; }
-  * /deep/ button[accent-light][raised]:hover {
+  button[accent-light][raised]:hover {
     box-shadow: 0 2px 2.5px 1.5px #076282; }
 
-* /deep/ button[accent-dark][raised] {
+button[accent-dark][raised] {
   box-shadow: 0 1px 1px 1px #021921; }
-  * /deep/ button[accent-dark][raised]:hover {
+  button[accent-dark][raised]:hover {
     box-shadow: 0 2px 2.5px 1.5px #021921; }
 
-* /deep/ button[dark][raised] {
+button[dark][raised] {
   box-shadow: 0 1px 1px 1px #111111; }
-  * /deep/ button[dark][raised]:hover {
+  button[dark][raised]:hover {
     box-shadow: 0 2px 2.5px 1.5px #111111; }
 
-* /deep/ button[bright][raised] {
+button[bright][raised] {
   box-shadow: 0 1px 1px 1px #bbbbbb; }
-  * /deep/ button[bright][raised]:hover {
+  button[bright][raised]:hover {
     box-shadow: 0 2px 2.5px 1.5px #bbbbbb; }
 
 /*--------------------
 	Bordered Style
 --------------------*/
-* /deep/ button[border] {
+button[border] {
   border: 2px solid #ee7b00; }
 
-* /deep/ button[primary][border] {
+button[primary][border] {
   border: 2px solid #ee7b00; }
 
-* /deep/ button[primary-light][border] {
+button[primary-light][border] {
   border: 2px solid #ff9422; }
 
-* /deep/ button[primary-dark][border] {
+button[primary-dark][border] {
   border: 2px solid #bb6100; }
 
-* /deep/ button[secondary][border] {
+button[secondary][border] {
   border: 2px solid #FB7560; }
 
-* /deep/ button[secondary-light][border] {
+button[secondary-light][border] {
   border: 2px solid #fca092; }
 
-* /deep/ button[secondary-dark][border] {
+button[secondary-dark][border] {
   border: 2px solid #fa4a2e; }
 
-* /deep/ button[accent][border] {
+button[accent][border] {
   border: 2px solid #0A86B2; }
 
-* /deep/ button[accent-light][border] {
+button[accent-light][border] {
   border: 2px solid #0daae2; }
 
-* /deep/ button[accent-dark][border] {
+button[accent-dark][border] {
   border: 2px solid #076282; }
 
-* /deep/ button[dark][border] {
+button[dark][border] {
   border: 2px solid #444; }
 
-* /deep/ button[bright][border] {
+button[bright][border] {
   border: 2px solid #eee; }
 
 /*--------------------
 	Small Style
 --------------------*/
-* /deep/ button[small] {
+button[small] {
   font-size: 0.75rem;
   line-height: 1.5rem;
   margin-bottom: 1.5rem;
@@ -326,23 +326,23 @@ html {
 /*--------------------
 	big Style
 --------------------*/
-* /deep/ button[big] {
+button[big] {
   font-size: 1.333rem;
   line-height: 3rem;
   margin-bottom: 3rem;
   padding: 0.8rem 1rem;
   margin: 0.2rem 0.4rem; }
 
-* /deep/ header {
+header, * /deep/ header {
   background-color: #ee7b00;
   color: #eee;
   padding: 0.2rem 0.8rem; }
-  * /deep/ header[fixed] {
+  header[fixed] {
     position: fixed;
     width: 100%;
     top: 0;
     left: 0; }
-  * /deep/ header[fixed] + * {
+  header[fixed] + *, * /deep/ header[fixed] + * {
     margin-top: 5rem; }
 
 /*--------------------
@@ -351,17 +351,17 @@ html {
 /*--------------------
 	Line-Height Types
 --------------------*/
-* /deep/ h1, * /deep/ h2 {
+h1, * /deep/ h1, h2, * /deep/ h2 {
   font-size: 1.777rem;
   line-height: 3rem;
   margin-bottom: 3rem; }
 
-* /deep/ h3, * /deep/ h4 {
+h3, * /deep/ h3, h4, * /deep/ h4 {
   font-size: 1.333rem;
   line-height: 3rem;
   margin-bottom: 3rem; }
 
-* /deep/ h5, * /deep/ h6 {
+h5, * /deep/ h5, h6, * /deep/ h6 {
   font-size: 1rem;
   line-height: 1.5rem;
   margin-bottom: 1.5rem; }
@@ -371,7 +371,7 @@ html {
 			Link Element (a)
  ----------------------------------------
 ----------------------------------------*/
-* /deep/ a {
+a, * /deep/ a {
   background-color: transparent;
   color: #ee7b00;
   font-size: 1rem;
@@ -383,223 +383,223 @@ html {
   border-radius: 0.2rem;
   text-decoration: none;
   outline: none; }
-  * /deep/ a:hover {
+  a:hover {
     text-decoration: underline; }
-  * /deep/ a[primary] {
+  a[primary] {
     background-color: transparent;
     color: #ee7b00; }
-  * /deep/ a[primary-light] {
+  a[primary-light] {
     background-color: transparent;
     color: #ff9422; }
-  * /deep/ a[primary-dark] {
+  a[primary-dark] {
     background-color: transparent;
     color: #bb6100; }
-  * /deep/ a[secondary] {
+  a[secondary] {
     background-color: transparent;
     color: #FB7560; }
-  * /deep/ a[secondary-light] {
+  a[secondary-light] {
     background-color: transparent;
     color: #fca092; }
-  * /deep/ a[secondary-dark] {
+  a[secondary-dark] {
     background-color: transparent;
     color: #fa4a2e; }
-  * /deep/ a[accent] {
+  a[accent] {
     background-color: transparent;
     color: #0A86B2; }
-  * /deep/ a[accent-light] {
+  a[accent-light] {
     background-color: transparent;
     color: #0daae2; }
-  * /deep/ a[accent-dark] {
+  a[accent-dark] {
     background-color: transparent;
     color: #076282; }
-  * /deep/ a[dark] {
+  a[dark] {
     background-color: transparent;
     color: #444; }
-  * /deep/ a[bright] {
+  a[bright] {
     background-color: transparent;
     color: #eee; }
 
 /*--------------------
 	Button Style
 --------------------*/
-* /deep/ a.btn {
+a.btn {
   background-color: #ee7b00;
   color: #eee; }
-  * /deep/ a.btn:hover {
+  a.btn:hover {
     text-decoration: none; }
 
-* /deep/ a.btn[primary] {
+a.btn[primary] {
   background-color: #ee7b00;
   color: #eee; }
-  * /deep/ a.btn[primary]:hover {
+  a.btn[primary]:hover {
     text-decoration: none; }
 
-* /deep/ a.btn[primary-light] {
+a.btn[primary-light] {
   background-color: #ff9422;
   color: #444; }
-  * /deep/ a.btn[primary-light]:hover {
+  a.btn[primary-light]:hover {
     text-decoration: none; }
 
-* /deep/ a.btn[primary-dark] {
+a.btn[primary-dark] {
   background-color: #bb6100;
   color: #eee; }
-  * /deep/ a.btn[primary-dark]:hover {
+  a.btn[primary-dark]:hover {
     text-decoration: none; }
 
-* /deep/ a.btn[secondary] {
+a.btn[secondary] {
   background-color: #FB7560;
   color: #444; }
-  * /deep/ a.btn[secondary]:hover {
+  a.btn[secondary]:hover {
     text-decoration: none; }
 
-* /deep/ a.btn[secondary-light] {
+a.btn[secondary-light] {
   background-color: #fca092;
   color: #444; }
-  * /deep/ a.btn[secondary-light]:hover {
+  a.btn[secondary-light]:hover {
     text-decoration: none; }
 
-* /deep/ a.btn[secondary-dark] {
+a.btn[secondary-dark] {
   background-color: #fa4a2e;
   color: #444; }
-  * /deep/ a.btn[secondary-dark]:hover {
+  a.btn[secondary-dark]:hover {
     text-decoration: none; }
 
-* /deep/ a.btn[accent] {
+a.btn[accent] {
   background-color: #0A86B2;
   color: #eee; }
-  * /deep/ a.btn[accent]:hover {
+  a.btn[accent]:hover {
     text-decoration: none; }
 
-* /deep/ a.btn[accent-light] {
+a.btn[accent-light] {
   background-color: #0daae2;
   color: #eee; }
-  * /deep/ a.btn[accent-light]:hover {
+  a.btn[accent-light]:hover {
     text-decoration: none; }
 
-* /deep/ a.btn[accent-dark] {
+a.btn[accent-dark] {
   background-color: #076282;
   color: #eee; }
-  * /deep/ a.btn[accent-dark]:hover {
+  a.btn[accent-dark]:hover {
     text-decoration: none; }
 
-* /deep/ a.btn[dark] {
+a.btn[dark] {
   background-color: #444;
   color: #eee; }
-  * /deep/ a.btn[dark]:hover {
+  a.btn[dark]:hover {
     text-decoration: none; }
 
-* /deep/ a.btn[bright] {
+a.btn[bright] {
   background-color: #eee;
   color: #444; }
-  * /deep/ a.btn[bright]:hover {
+  a.btn[bright]:hover {
     text-decoration: none; }
 
 /*--------------------
 	Raised Style
 --------------------*/
-* /deep/ a[raised] {
+a[raised] {
   box-shadow: 0 1px 1px 1px #884600; }
-  * /deep/ a[raised]:hover {
+  a[raised]:hover {
     box-shadow: 0 2px 2.5px 1.5px #884600; }
 
-* /deep/ a[primary][raised] {
+a[primary][raised] {
   box-shadow: 0 1px 1px 1px #884600; }
-  * /deep/ a[primary][raised]:hover {
+  a[primary][raised]:hover {
     box-shadow: 0 2px 2.5px 1.5px #884600; }
 
-* /deep/ a[primary-light][raised] {
+a[primary-light][raised] {
   box-shadow: 0 1px 1px 1px #bb6100; }
-  * /deep/ a[primary-light][raised]:hover {
+  a[primary-light][raised]:hover {
     box-shadow: 0 2px 2.5px 1.5px #bb6100; }
 
-* /deep/ a[primary-dark][raised] {
+a[primary-dark][raised] {
   box-shadow: 0 1px 1px 1px #552c00; }
-  * /deep/ a[primary-dark][raised]:hover {
+  a[primary-dark][raised]:hover {
     box-shadow: 0 2px 2.5px 1.5px #552c00; }
 
-* /deep/ a[secondary][raised] {
+a[secondary][raised] {
   box-shadow: 0 1px 1px 1px #ef2606; }
-  * /deep/ a[secondary][raised]:hover {
+  a[secondary][raised]:hover {
     box-shadow: 0 2px 2.5px 1.5px #ef2606; }
 
-* /deep/ a[secondary-light][raised] {
+a[secondary-light][raised] {
   box-shadow: 0 1px 1px 1px #fa4a2e; }
-  * /deep/ a[secondary-light][raised]:hover {
+  a[secondary-light][raised]:hover {
     box-shadow: 0 2px 2.5px 1.5px #fa4a2e; }
 
-* /deep/ a[secondary-dark][raised] {
+a[secondary-dark][raised] {
   box-shadow: 0 1px 1px 1px #bd1e05; }
-  * /deep/ a[secondary-dark][raised]:hover {
+  a[secondary-dark][raised]:hover {
     box-shadow: 0 2px 2.5px 1.5px #bd1e05; }
 
-* /deep/ a[accent][raised] {
+a[accent][raised] {
   box-shadow: 0 1px 1px 1px #053d51; }
-  * /deep/ a[accent][raised]:hover {
+  a[accent][raised]:hover {
     box-shadow: 0 2px 2.5px 1.5px #053d51; }
 
-* /deep/ a[accent-light][raised] {
+a[accent-light][raised] {
   box-shadow: 0 1px 1px 1px #076282; }
-  * /deep/ a[accent-light][raised]:hover {
+  a[accent-light][raised]:hover {
     box-shadow: 0 2px 2.5px 1.5px #076282; }
 
-* /deep/ a[accent-dark][raised] {
+a[accent-dark][raised] {
   box-shadow: 0 1px 1px 1px #021921; }
-  * /deep/ a[accent-dark][raised]:hover {
+  a[accent-dark][raised]:hover {
     box-shadow: 0 2px 2.5px 1.5px #021921; }
 
-* /deep/ a[dark][raised] {
+a[dark][raised] {
   box-shadow: 0 1px 1px 1px #111111; }
-  * /deep/ a[dark][raised]:hover {
+  a[dark][raised]:hover {
     box-shadow: 0 2px 2.5px 1.5px #111111; }
 
-* /deep/ a[bright][raised] {
+a[bright][raised] {
   box-shadow: 0 1px 1px 1px #bbbbbb; }
-  * /deep/ a[bright][raised]:hover {
+  a[bright][raised]:hover {
     box-shadow: 0 2px 2.5px 1.5px #bbbbbb; }
 
 /*--------------------
 	Bordered Style
 --------------------*/
-* /deep/ a[border] {
+a[border] {
   border: 2px solid #ee7b00; }
 
-* /deep/ a[primary][border] {
+a[primary][border] {
   border: 2px solid #ee7b00; }
 
-* /deep/ a[primary-light][border] {
+a[primary-light][border] {
   border: 2px solid #ff9422; }
 
-* /deep/ a[primary-dark][border] {
+a[primary-dark][border] {
   border: 2px solid #bb6100; }
 
-* /deep/ a[secondary][border] {
+a[secondary][border] {
   border: 2px solid #FB7560; }
 
-* /deep/ a[secondary-light][border] {
+a[secondary-light][border] {
   border: 2px solid #fca092; }
 
-* /deep/ a[secondary-dark][border] {
+a[secondary-dark][border] {
   border: 2px solid #fa4a2e; }
 
-* /deep/ a[accent][border] {
+a[accent][border] {
   border: 2px solid #0A86B2; }
 
-* /deep/ a[accent-light][border] {
+a[accent-light][border] {
   border: 2px solid #0daae2; }
 
-* /deep/ a[accent-dark][border] {
+a[accent-dark][border] {
   border: 2px solid #076282; }
 
-* /deep/ a[dark][border] {
+a[dark][border] {
   border: 2px solid #444; }
 
-* /deep/ a[bright][border] {
+a[bright][border] {
   border: 2px solid #eee; }
 
 /*--------------------
 	Small Style
 --------------------*/
-* /deep/ a[small] {
+a[small] {
   padding: 0.4rem;
   font-size: 0.75rem;
   line-height: 1.5rem;
@@ -608,7 +608,7 @@ html {
 /*--------------------
 	big Style
 --------------------*/
-* /deep/ a[big] {
+a[big] {
   padding: 1rem;
   font-size: 1.333rem;
   line-height: 3rem;
@@ -619,41 +619,41 @@ html {
 			Paragraph Element (p)
  ----------------------------------------
 ----------------------------------------*/
-* /deep/ p, * /deep/ span {
+p, * /deep/ p, span, * /deep/ span {
   font-size: 1rem;
   line-height: 1.5rem;
   margin-bottom: 1.5rem; }
-  * /deep/ p[primary], * /deep/ span[primary] {
+  p[primary], span[primary] {
     background-color: transparent;
     color: #ee7b00; }
-  * /deep/ p[primary-light], * /deep/ span[primary-light] {
+  p[primary-light], span[primary-light] {
     background-color: transparent;
     color: #ff9422; }
-  * /deep/ p[primary-dark], * /deep/ span[primary-dark] {
+  p[primary-dark], span[primary-dark] {
     background-color: transparent;
     color: #bb6100; }
-  * /deep/ p[secondary], * /deep/ span[secondary] {
+  p[secondary], span[secondary] {
     background-color: transparent;
     color: #FB7560; }
-  * /deep/ p[secondary-light], * /deep/ span[secondary-light] {
+  p[secondary-light], span[secondary-light] {
     background-color: transparent;
     color: #fca092; }
-  * /deep/ p[secondary-dark], * /deep/ span[secondary-dark] {
+  p[secondary-dark], span[secondary-dark] {
     background-color: transparent;
     color: #fa4a2e; }
-  * /deep/ p[accent], * /deep/ span[accent] {
+  p[accent], span[accent] {
     background-color: transparent;
     color: #0A86B2; }
-  * /deep/ p[accent-light], * /deep/ span[accent-light] {
+  p[accent-light], span[accent-light] {
     background-color: transparent;
     color: #0daae2; }
-  * /deep/ p[accent-dark], * /deep/ span[accent-dark] {
+  p[accent-dark], span[accent-dark] {
     background-color: transparent;
     color: #076282; }
-  * /deep/ p[dark], * /deep/ span[dark] {
+  p[dark], span[dark] {
     background-color: transparent;
     color: #444; }
-  * /deep/ p[bright], * /deep/ span[bright] {
+  p[bright], span[bright] {
     background-color: transparent;
     color: #eee; }
 
@@ -667,53 +667,53 @@ html {
 			Fieldset Element (a)
  ----------------------------------------
 ----------------------------------------*/
-* /deep/ fieldset {
+fieldset, * /deep/ fieldset {
   font-size: 1rem;
   line-height: 1.5rem;
   margin-bottom: 1.5rem;
   border-radius: 2px;
   border: 1px solid #444; }
-  * /deep/ fieldset[primary] {
+  fieldset[primary] {
     border: 1px solid #ee7b00;
     color: initial;
     background-color: initial; }
-  * /deep/ fieldset[primary-light] {
+  fieldset[primary-light] {
     border: 1px solid #ff9422;
     color: initial;
     background-color: initial; }
-  * /deep/ fieldset[primary-dark] {
+  fieldset[primary-dark] {
     border: 1px solid #bb6100;
     color: initial;
     background-color: initial; }
-  * /deep/ fieldset[secondary] {
+  fieldset[secondary] {
     border: 1px solid #FB7560;
     color: initial;
     background-color: initial; }
-  * /deep/ fieldset[secondary-light] {
+  fieldset[secondary-light] {
     border: 1px solid #fca092;
     color: initial;
     background-color: initial; }
-  * /deep/ fieldset[secondary-dark] {
+  fieldset[secondary-dark] {
     border: 1px solid #fa4a2e;
     color: initial;
     background-color: initial; }
-  * /deep/ fieldset[accent] {
+  fieldset[accent] {
     border: 1px solid #0A86B2;
     color: initial;
     background-color: initial; }
-  * /deep/ fieldset[accent-light] {
+  fieldset[accent-light] {
     border: 1px solid #0daae2;
     color: initial;
     background-color: initial; }
-  * /deep/ fieldset[accent-dark] {
+  fieldset[accent-dark] {
     border: 1px solid #076282;
     color: initial;
     background-color: initial; }
-  * /deep/ fieldset[dark] {
+  fieldset[dark] {
     border: 1px solid #444;
     color: initial;
     background-color: initial; }
-  * /deep/ fieldset[bright] {
+  fieldset[bright] {
     border: 1px solid #eee;
     color: initial;
     background-color: initial; }
@@ -723,7 +723,7 @@ html {
 			Legend Element (a)
  ----------------------------------------
 ----------------------------------------*/
-* /deep/ legend {
+legend, * /deep/ legend {
   font-size: 1rem;
   line-height: 1.5rem;
   margin-bottom: 1.5rem;
@@ -763,37 +763,37 @@ html {
   * /deep/ fieldset[bright] > legend {
     background-color: transparent;
     color: #eee; }
-  * /deep/ legend[primary] {
+  legend[primary] {
     background-color: transparent !important;
     color: #ee7b00 !important; }
-  * /deep/ legend[primary-light] {
+  legend[primary-light] {
     background-color: transparent !important;
     color: #ff9422 !important; }
-  * /deep/ legend[primary-dark] {
+  legend[primary-dark] {
     background-color: transparent !important;
     color: #bb6100 !important; }
-  * /deep/ legend[secondary] {
+  legend[secondary] {
     background-color: transparent !important;
     color: #FB7560 !important; }
-  * /deep/ legend[secondary-light] {
+  legend[secondary-light] {
     background-color: transparent !important;
     color: #fca092 !important; }
-  * /deep/ legend[secondary-dark] {
+  legend[secondary-dark] {
     background-color: transparent !important;
     color: #fa4a2e !important; }
-  * /deep/ legend[accent] {
+  legend[accent] {
     background-color: transparent !important;
     color: #0A86B2 !important; }
-  * /deep/ legend[accent-light] {
+  legend[accent-light] {
     background-color: transparent !important;
     color: #0daae2 !important; }
-  * /deep/ legend[accent-dark] {
+  legend[accent-dark] {
     background-color: transparent !important;
     color: #076282 !important; }
-  * /deep/ legend[dark] {
+  legend[dark] {
     background-color: transparent !important;
     color: #444 !important; }
-  * /deep/ legend[bright] {
+  legend[bright] {
     background-color: transparent !important;
     color: #eee !important; }
 
@@ -802,7 +802,7 @@ html {
 			Input Element (a)
  ----------------------------------------
 ----------------------------------------*/
-* /deep/ input {
+input, * /deep/ input {
   font-size: 1rem;
   line-height: 1.5rem;
   margin-bottom: 1.5rem;
@@ -811,50 +811,50 @@ html {
   border: none;
   border-bottom: 1px solid #444;
   outline: none; }
-  * /deep/ input:focus {
+  input:focus {
     border-width: 2px;
     padding-bottom: 0; }
-  * /deep/ input[primary] {
+  input[primary] {
     border-bottom: 1px solid #ee7b00;
     background-color: transparent;
     color: #ee7b00; }
-  * /deep/ input[primary-light] {
+  input[primary-light] {
     border-bottom: 1px solid #ff9422;
     background-color: transparent;
     color: #ff9422; }
-  * /deep/ input[primary-dark] {
+  input[primary-dark] {
     border-bottom: 1px solid #bb6100;
     background-color: transparent;
     color: #bb6100; }
-  * /deep/ input[secondary] {
+  input[secondary] {
     border-bottom: 1px solid #FB7560;
     background-color: transparent;
     color: #FB7560; }
-  * /deep/ input[secondary-light] {
+  input[secondary-light] {
     border-bottom: 1px solid #fca092;
     background-color: transparent;
     color: #fca092; }
-  * /deep/ input[secondary-dark] {
+  input[secondary-dark] {
     border-bottom: 1px solid #fa4a2e;
     background-color: transparent;
     color: #fa4a2e; }
-  * /deep/ input[accent] {
+  input[accent] {
     border-bottom: 1px solid #0A86B2;
     background-color: transparent;
     color: #0A86B2; }
-  * /deep/ input[accent-light] {
+  input[accent-light] {
     border-bottom: 1px solid #0daae2;
     background-color: transparent;
     color: #0daae2; }
-  * /deep/ input[accent-dark] {
+  input[accent-dark] {
     border-bottom: 1px solid #076282;
     background-color: transparent;
     color: #076282; }
-  * /deep/ input[dark] {
+  input[dark] {
     border-bottom: 1px solid #444;
     background-color: transparent;
     color: #444; }
-  * /deep/ input[bright] {
+  input[bright] {
     border-bottom: 1px solid #eee;
     background-color: transparent;
     color: #eee; }
@@ -864,7 +864,7 @@ html {
 			Label Element (a)
  ----------------------------------------
 ----------------------------------------*/
-* /deep/ label {
+label, * /deep/ label {
   font-size: 1rem;
   line-height: 1.5rem;
   margin-bottom: 1.5rem;
@@ -872,7 +872,7 @@ html {
   background-color: transparent;
   color: #444;
   border: none; }
-  * /deep/ label[top] {
+  label[top] {
     display: block; }
 
 /*----------------------------------------
@@ -880,7 +880,7 @@ html {
 			Select Element
  ----------------------------------------
 ----------------------------------------*/
-* /deep/ select {
+select, * /deep/ select {
   font-size: 1rem;
   line-height: 1.5rem;
   margin-bottom: 1.5rem;
@@ -889,47 +889,47 @@ html {
   border: none;
   border-bottom: 1px solid #444;
   outline: none; }
-  * /deep/ select[primary] {
+  select[primary] {
     border-bottom: 1px solid #ee7b00;
     background-color: transparent;
     color: #ee7b00; }
-  * /deep/ select[primary-light] {
+  select[primary-light] {
     border-bottom: 1px solid #ff9422;
     background-color: transparent;
     color: #ff9422; }
-  * /deep/ select[primary-dark] {
+  select[primary-dark] {
     border-bottom: 1px solid #bb6100;
     background-color: transparent;
     color: #bb6100; }
-  * /deep/ select[secondary] {
+  select[secondary] {
     border-bottom: 1px solid #FB7560;
     background-color: transparent;
     color: #FB7560; }
-  * /deep/ select[secondary-light] {
+  select[secondary-light] {
     border-bottom: 1px solid #fca092;
     background-color: transparent;
     color: #fca092; }
-  * /deep/ select[secondary-dark] {
+  select[secondary-dark] {
     border-bottom: 1px solid #fa4a2e;
     background-color: transparent;
     color: #fa4a2e; }
-  * /deep/ select[accent] {
+  select[accent] {
     border-bottom: 1px solid #0A86B2;
     background-color: transparent;
     color: #0A86B2; }
-  * /deep/ select[accent-light] {
+  select[accent-light] {
     border-bottom: 1px solid #0daae2;
     background-color: transparent;
     color: #0daae2; }
-  * /deep/ select[accent-dark] {
+  select[accent-dark] {
     border-bottom: 1px solid #076282;
     background-color: transparent;
     color: #076282; }
-  * /deep/ select[dark] {
+  select[dark] {
     border-bottom: 1px solid #444;
     background-color: transparent;
     color: #444; }
-  * /deep/ select[bright] {
+  select[bright] {
     border-bottom: 1px solid #eee;
     background-color: transparent;
     color: #eee; }
@@ -939,10 +939,10 @@ html {
 			Checkbox Element (input[type="checkbox"])
  ----------------------------------------
 ----------------------------------------*/
-* /deep/ input[type="checkbox"]:not([native]) {
+input[type="checkbox"]:not([native]) {
   display: none; }
 
-* /deep/ input[type="checkbox"]:not([native]) + label::after {
+input[type="checkbox"]:not([native]) + label::after, * /deep/ input[type="checkbox"]:not([native]) + label::after {
   content: "";
   display: inline-block;
   width: 1rem;
@@ -954,65 +954,65 @@ html {
   border: 1px solid #444;
   font-weight: bold; }
 
-* /deep/ input[type="checkbox"]:not([native])[primary] + label::after {
+input[type="checkbox"]:not([native])[primary] + label::after, * /deep/ input[type="checkbox"]:not([native])[primary] + label::after {
   border: 1px solid #ee7b00;
   background-color: transparent;
   color: #ee7b00; }
 
-* /deep/ input[type="checkbox"]:not([native])[primary-light] + label::after {
+input[type="checkbox"]:not([native])[primary-light] + label::after, * /deep/ input[type="checkbox"]:not([native])[primary-light] + label::after {
   border: 1px solid #ff9422;
   background-color: transparent;
   color: #ff9422; }
 
-* /deep/ input[type="checkbox"]:not([native])[primary-dark] + label::after {
+input[type="checkbox"]:not([native])[primary-dark] + label::after, * /deep/ input[type="checkbox"]:not([native])[primary-dark] + label::after {
   border: 1px solid #bb6100;
   background-color: transparent;
   color: #bb6100; }
 
-* /deep/ input[type="checkbox"]:not([native])[secondary] + label::after {
+input[type="checkbox"]:not([native])[secondary] + label::after, * /deep/ input[type="checkbox"]:not([native])[secondary] + label::after {
   border: 1px solid #FB7560;
   background-color: transparent;
   color: #FB7560; }
 
-* /deep/ input[type="checkbox"]:not([native])[secondary-light] + label::after {
+input[type="checkbox"]:not([native])[secondary-light] + label::after, * /deep/ input[type="checkbox"]:not([native])[secondary-light] + label::after {
   border: 1px solid #fca092;
   background-color: transparent;
   color: #fca092; }
 
-* /deep/ input[type="checkbox"]:not([native])[secondary-dark] + label::after {
+input[type="checkbox"]:not([native])[secondary-dark] + label::after, * /deep/ input[type="checkbox"]:not([native])[secondary-dark] + label::after {
   border: 1px solid #fa4a2e;
   background-color: transparent;
   color: #fa4a2e; }
 
-* /deep/ input[type="checkbox"]:not([native])[accent] + label::after {
+input[type="checkbox"]:not([native])[accent] + label::after, * /deep/ input[type="checkbox"]:not([native])[accent] + label::after {
   border: 1px solid #0A86B2;
   background-color: transparent;
   color: #0A86B2; }
 
-* /deep/ input[type="checkbox"]:not([native])[accent-light] + label::after {
+input[type="checkbox"]:not([native])[accent-light] + label::after, * /deep/ input[type="checkbox"]:not([native])[accent-light] + label::after {
   border: 1px solid #0daae2;
   background-color: transparent;
   color: #0daae2; }
 
-* /deep/ input[type="checkbox"]:not([native])[accent-dark] + label::after {
+input[type="checkbox"]:not([native])[accent-dark] + label::after, * /deep/ input[type="checkbox"]:not([native])[accent-dark] + label::after {
   border: 1px solid #076282;
   background-color: transparent;
   color: #076282; }
 
-* /deep/ input[type="checkbox"]:not([native])[dark] + label::after {
+input[type="checkbox"]:not([native])[dark] + label::after, * /deep/ input[type="checkbox"]:not([native])[dark] + label::after {
   border: 1px solid #444;
   background-color: transparent;
   color: #444; }
 
-* /deep/ input[type="checkbox"]:not([native])[bright] + label::after {
+input[type="checkbox"]:not([native])[bright] + label::after, * /deep/ input[type="checkbox"]:not([native])[bright] + label::after {
   border: 1px solid #eee;
   background-color: transparent;
   color: #eee; }
 
-* /deep/ input[type="checkbox"]:not([native]) + label[top]::after {
+input[type="checkbox"]:not([native]) + label[top]::after, * /deep/ input[type="checkbox"]:not([native]) + label[top]::after {
   display: block; }
 
-* /deep/ input[type="checkbox"]:not([native]):checked + label::after {
+input[type="checkbox"]:not([native]):checked + label::after, * /deep/ input[type="checkbox"]:not([native]):checked + label::after {
   content: "\2713"; }
 
 /*----------------------------------------
@@ -1020,10 +1020,10 @@ html {
 			Radiobutton Element (input[type="radio"])
  ----------------------------------------
 ----------------------------------------*/
-* /deep/ input[type="radio"]:not([native]) {
+input[type="radio"]:not([native]) {
   display: none; }
 
-* /deep/ input[type="radio"]:not([native]) + label::after {
+input[type="radio"]:not([native]) + label::after, * /deep/ input[type="radio"]:not([native]) + label::after {
   content: "";
   display: inline-block;
   width: 0.8rem;
@@ -1036,65 +1036,65 @@ html {
   border-radius: 1000px;
   font-weight: bold; }
 
-* /deep/ input[type="radio"]:not([native])[primary] + label::after {
+input[type="radio"]:not([native])[primary] + label::after, * /deep/ input[type="radio"]:not([native])[primary] + label::after {
   border: 1px solid #ee7b00;
   background-color: transparent;
   color: #ee7b00; }
 
-* /deep/ input[type="radio"]:not([native])[primary-light] + label::after {
+input[type="radio"]:not([native])[primary-light] + label::after, * /deep/ input[type="radio"]:not([native])[primary-light] + label::after {
   border: 1px solid #ff9422;
   background-color: transparent;
   color: #ff9422; }
 
-* /deep/ input[type="radio"]:not([native])[primary-dark] + label::after {
+input[type="radio"]:not([native])[primary-dark] + label::after, * /deep/ input[type="radio"]:not([native])[primary-dark] + label::after {
   border: 1px solid #bb6100;
   background-color: transparent;
   color: #bb6100; }
 
-* /deep/ input[type="radio"]:not([native])[secondary] + label::after {
+input[type="radio"]:not([native])[secondary] + label::after, * /deep/ input[type="radio"]:not([native])[secondary] + label::after {
   border: 1px solid #FB7560;
   background-color: transparent;
   color: #FB7560; }
 
-* /deep/ input[type="radio"]:not([native])[secondary-light] + label::after {
+input[type="radio"]:not([native])[secondary-light] + label::after, * /deep/ input[type="radio"]:not([native])[secondary-light] + label::after {
   border: 1px solid #fca092;
   background-color: transparent;
   color: #fca092; }
 
-* /deep/ input[type="radio"]:not([native])[secondary-dark] + label::after {
+input[type="radio"]:not([native])[secondary-dark] + label::after, * /deep/ input[type="radio"]:not([native])[secondary-dark] + label::after {
   border: 1px solid #fa4a2e;
   background-color: transparent;
   color: #fa4a2e; }
 
-* /deep/ input[type="radio"]:not([native])[accent] + label::after {
+input[type="radio"]:not([native])[accent] + label::after, * /deep/ input[type="radio"]:not([native])[accent] + label::after {
   border: 1px solid #0A86B2;
   background-color: transparent;
   color: #0A86B2; }
 
-* /deep/ input[type="radio"]:not([native])[accent-light] + label::after {
+input[type="radio"]:not([native])[accent-light] + label::after, * /deep/ input[type="radio"]:not([native])[accent-light] + label::after {
   border: 1px solid #0daae2;
   background-color: transparent;
   color: #0daae2; }
 
-* /deep/ input[type="radio"]:not([native])[accent-dark] + label::after {
+input[type="radio"]:not([native])[accent-dark] + label::after, * /deep/ input[type="radio"]:not([native])[accent-dark] + label::after {
   border: 1px solid #076282;
   background-color: transparent;
   color: #076282; }
 
-* /deep/ input[type="radio"]:not([native])[dark] + label::after {
+input[type="radio"]:not([native])[dark] + label::after, * /deep/ input[type="radio"]:not([native])[dark] + label::after {
   border: 1px solid #444;
   background-color: transparent;
   color: #444; }
 
-* /deep/ input[type="radio"]:not([native])[bright] + label::after {
+input[type="radio"]:not([native])[bright] + label::after, * /deep/ input[type="radio"]:not([native])[bright] + label::after {
   border: 1px solid #eee;
   background-color: transparent;
   color: #eee; }
 
-* /deep/ input[type="radio"]:not([native]) + label[top]::after {
+input[type="radio"]:not([native]) + label[top]::after, * /deep/ input[type="radio"]:not([native]) + label[top]::after {
   display: block; }
 
-* /deep/ input[type="radio"]:not([native]):checked + label::after {
+input[type="radio"]:not([native]):checked + label::after, * /deep/ input[type="radio"]:not([native]):checked + label::after {
   content: "\2022"; }
 
 /*----------------------------------------
@@ -1102,7 +1102,7 @@ html {
 			Textarea Element
  ----------------------------------------
 ----------------------------------------*/
-* /deep/ textarea {
+textarea, * /deep/ textarea {
   font-size: 1rem;
   line-height: 1.5rem;
   margin-bottom: 1.5rem;
@@ -1110,115 +1110,115 @@ html {
   color: #444;
   border: 1px solid #444;
   outline: none; }
-  * /deep/ textarea:focus {
+  textarea:focus {
     border-width: 2px;
     padding: 1px; }
-  * /deep/ textarea[primary] {
+  textarea[primary] {
     border: 1px solid #ee7b00;
     background-color: transparent;
     color: #ee7b00; }
-  * /deep/ textarea[primary-light] {
+  textarea[primary-light] {
     border: 1px solid #ff9422;
     background-color: transparent;
     color: #ff9422; }
-  * /deep/ textarea[primary-dark] {
+  textarea[primary-dark] {
     border: 1px solid #bb6100;
     background-color: transparent;
     color: #bb6100; }
-  * /deep/ textarea[secondary] {
+  textarea[secondary] {
     border: 1px solid #FB7560;
     background-color: transparent;
     color: #FB7560; }
-  * /deep/ textarea[secondary-light] {
+  textarea[secondary-light] {
     border: 1px solid #fca092;
     background-color: transparent;
     color: #fca092; }
-  * /deep/ textarea[secondary-dark] {
+  textarea[secondary-dark] {
     border: 1px solid #fa4a2e;
     background-color: transparent;
     color: #fa4a2e; }
-  * /deep/ textarea[accent] {
+  textarea[accent] {
     border: 1px solid #0A86B2;
     background-color: transparent;
     color: #0A86B2; }
-  * /deep/ textarea[accent-light] {
+  textarea[accent-light] {
     border: 1px solid #0daae2;
     background-color: transparent;
     color: #0daae2; }
-  * /deep/ textarea[accent-dark] {
+  textarea[accent-dark] {
     border: 1px solid #076282;
     background-color: transparent;
     color: #076282; }
-  * /deep/ textarea[dark] {
+  textarea[dark] {
     border: 1px solid #444;
     background-color: transparent;
     color: #444; }
-  * /deep/ textarea[bright] {
+  textarea[bright] {
     border: 1px solid #eee;
     background-color: transparent;
     color: #eee; }
-  * /deep/ textarea[fixed] {
+  textarea[fixed] {
     resize: none; }
 
 * /deep/ *:target {
   border-bottom: 0.2rem solid #bb6100; }
 
-* /deep/ *[primary]:target {
+*[primary]:target, * /deep/ *[primary]:target {
   border-bottom: 0.2rem solid #bb6100; }
 
-* /deep/ *[primary-light]:target {
+*[primary-light]:target, * /deep/ *[primary-light]:target {
   border-bottom: 0.2rem solid #ee7b00; }
 
-* /deep/ *[primary-dark]:target {
+*[primary-dark]:target, * /deep/ *[primary-dark]:target {
   border-bottom: 0.2rem solid #884600; }
 
-* /deep/ *[secondary]:target {
+*[secondary]:target, * /deep/ *[secondary]:target {
   border-bottom: 0.2rem solid #fa4a2e; }
 
-* /deep/ *[secondary-light]:target {
+*[secondary-light]:target, * /deep/ *[secondary-light]:target {
   border-bottom: 0.2rem solid #fb7560; }
 
-* /deep/ *[secondary-dark]:target {
+*[secondary-dark]:target, * /deep/ *[secondary-dark]:target {
   border-bottom: 0.2rem solid #ef2606; }
 
-* /deep/ *[accent]:target {
+*[accent]:target, * /deep/ *[accent]:target {
   border-bottom: 0.2rem solid #076282; }
 
-* /deep/ *[accent-light]:target {
+*[accent-light]:target, * /deep/ *[accent-light]:target {
   border-bottom: 0.2rem solid #0a86b2; }
 
-* /deep/ *[accent-dark]:target {
+*[accent-dark]:target, * /deep/ *[accent-dark]:target {
   border-bottom: 0.2rem solid #053d51; }
 
-* /deep/ *[dark]:target {
+*[dark]:target, * /deep/ *[dark]:target {
   border-bottom: 0.2rem solid #2b2b2b; }
 
-* /deep/ *[bright]:target {
+*[bright]:target, * /deep/ *[bright]:target {
   border-bottom: 0.2rem solid #d4d4d4; }
 
-* /deep/ *[z-1] {
+*[z-1], * /deep/ *[z-1] {
   box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.2); }
 
-* /deep/ *[z-2] {
+*[z-2], * /deep/ *[z-2] {
   box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.2); }
 
-* /deep/ *[z-3] {
+*[z-3], * /deep/ *[z-3] {
   box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.2); }
 
-* /deep/ .card, * /deep/ .dialog {
+.card, * /deep/ .card, .dialog, * /deep/ .dialog {
   box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.2);
   padding: 1rem 2rem;
   margin-bottom: 3rem; }
-  * /deep/ .card > .header, * /deep/ .dialog > .header {
+  .card > .header, * /deep/ .card > .header, .dialog > .header, * /deep/ .dialog > .header {
     margin: -1rem -2rem 1rem -2rem;
     padding: 1rem 2rem 1rem 2rem;
     border-bottom: 1px solid #444; }
-  * /deep/ .card > .footer, * /deep/ .dialog > .footer {
+  .card > .footer, * /deep/ .card > .footer, .dialog > .footer, * /deep/ .dialog > .footer {
     margin: 1rem -2rem -1rem -2rem;
     padding: 1rem 2rem 1rem 2rem;
     border-top: 1px solid #444; }
 
-* /deep/ .dialog {
+.dialog, * /deep/ .dialog {
   background-color: white;
   position: fixed;
   width: 50%;
@@ -1228,12 +1228,12 @@ html {
   pointer-events: none;
   transform: scale(0.75);
   transition: opacity 0.15s, transform 0.15s; }
-  .dialog-open * /deep/ .dialog, * .dialog-open /deep/ .dialog {
+  .dialog-open /deep/ .dialog {
     opacity: 1;
     transform: scale(1);
     pointer-events: all; }
 
-.dialog-open /deep/ .overlay {
+.dialog-open .overlay, .dialog-open /deep/ .overlay {
   filter: blur(5px) grayscale(50%);
   -webkit-filter: blur(5px) grayscale(50%);
   pointer-events: none; }

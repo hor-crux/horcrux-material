@@ -14,7 +14,7 @@
 }
 
 @each $name, $color in $color-map {
-	* /deep/ *[#{$name}]:target {
+	*[#{$name}]:target, * /deep/ *[#{$name}]:target {
 		@include targeted($color);
 	}
 }

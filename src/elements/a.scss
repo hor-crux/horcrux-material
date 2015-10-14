@@ -118,6 +118,6 @@ $link-colors: $primary, $secondary, $accent;
 	@include big();
 }
 
-* /deep/ a {
+a, * /deep/ a {
 	@extend %a;
 }

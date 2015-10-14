@@ -5,7 +5,7 @@ $z-level: 1 2 3;
 }
 
 @each $level in $z-level {
-	* /deep/ *[z-#{$level}] {
+	*[z-#{$level}], * /deep/ *[z-#{$level}] {
 		@include z($level);
 	}
 }

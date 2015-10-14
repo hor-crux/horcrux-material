@@ -123,6 +123,6 @@ $button-colors: $primary, $secondary, $accent;
 	@include big();
 }
 
-* /deep/ button {
+button, * /deep/ button {
 	@extend %button;
 }

@@ -16,6 +16,6 @@
 	}
 }
 
-* /deep/ .card {
+.card, * /deep/ .card {
 	@extend %card;
 }
