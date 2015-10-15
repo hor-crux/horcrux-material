@@ -16,6 +16,7 @@ gulp.task('build:shim', ['clean'], function() {
   gulp.src(paths.source + '/' + packagejson.name + '.scss')
   .pipe(sass().on('error', sass.logError))
   .pipe(replace(/\*\s*\/deep\/\s*/gm, ''))
+  .pipe(replace(/\/deep\//gm, ''))
   .pipe(rename(function (path) {
     path.basename += "-shimmed";
   }))

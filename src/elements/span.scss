@@ -17,6 +17,6 @@
 }
 
 
-span, * /deep/ span {
+* /deep/ span {
 	@extend %p;
 }

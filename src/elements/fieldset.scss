@@ -21,6 +21,6 @@
 }
 
 
-fieldset, * /deep/ fieldset {
+* /deep/ fieldset {
 	@extend %fieldset;
 }

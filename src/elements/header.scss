@@ -15,6 +15,6 @@
 	}
 }
 
-header, * /deep/ header {
+* /deep/ header {
 	@extend %header;
 }

@@ -46,6 +46,6 @@
 }
 
 
-input[type="radio"], * /deep/ input[type="radio"] {
+* /deep/ input[type="radio"] {
 	@extend %radio;
 }

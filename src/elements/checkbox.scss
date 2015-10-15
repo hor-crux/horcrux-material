@@ -47,6 +47,6 @@
 }
 
 
-input[type="checkbox"], * /deep/ input[type="checkbox"] {
+* /deep/ input[type="checkbox"] {
 	@extend %checkbox;
 }

@@ -24,6 +24,6 @@
 }
 
 
-select, * /deep/ select {
+* /deep/ select {
 	@extend %select;
 }

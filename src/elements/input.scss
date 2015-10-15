@@ -30,6 +30,6 @@
 }
 
 
-input, * /deep/ input {
+* /deep/ input {
 	@extend %input;
 }

@@ -20,6 +20,6 @@
 }
 
 
-label, * /deep/ label {
+* /deep/ label {
 	@extend %label;
 }

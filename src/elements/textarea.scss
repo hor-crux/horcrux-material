@@ -32,6 +32,6 @@
 }
 
 
-textarea, * /deep/ textarea {
+* /deep/ textarea {
 	@extend %textarea;
 }
